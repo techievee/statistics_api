@@ -75,17 +75,6 @@ export default Ember.Controller.extend({
         }
     }),
 
-    entities: {
-        urls: [{
-                url: 'https://t.co/emberjs',
-                display_url: 'emberjs.com',
-                indices: [6, 17]
-            }],
-        hashtags: [],
-        user_mentions: [],
-        media: []
-    },
-
     nextEpoch: Ember.computed('height', {
         get() {
             var epochOffset = (30000 - (this.getWithDefault('height', 1) % 30000)) * 1000 * this.get('config').BlockTime;

@@ -15,3 +15,4 @@ export default Ember.Component.extend({
     return this.get('router').isActive(currentWhen);
   }.property('router.url', 'currentWhen')
 });
+

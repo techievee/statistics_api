@@ -17,6 +17,7 @@ Router.map(function() {
     this.route('immature');
     this.route('pending');
   });
+  
 
   this.route('help');
   this.route('payments');
