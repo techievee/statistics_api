@@ -113,7 +113,7 @@
                     <i class="fa fa-info-circle fa-fw"></i> Miner Information Panel
                 </div>
                 <!-- /.panel-heading -->
-
+ {{#if model.stats.pending}}
                 <div class="list-group">
 
                     <li class="list-group-item">
@@ -137,7 +137,7 @@
                     {{#if model.stats.pending}}
                     <li href="#" class="list-group-item">
                         <i class="fa fa-thumbs-up fa-fw"></i> Current Payment:
-                        <span class="pull-right text-muted small"><em>{{format-balance model.stats.pending}}<</em>
+                        <span class="pull-right text-muted small"><em>{{format-balance model.stats.pending}}</em>
                         </span>
                     </li>
                     {{/if}}
