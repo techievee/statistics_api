@@ -2,7 +2,7 @@
 
     <h4>SETTINGS</h4>
 
-    <div class="col-md-12">
+    <div class="col-md-12 disable">
         <form action="" method="post">
             <div class="checkbox"><label>
                     <input id="monitor" type="checkbox" name="monitor">Send a mail if one of my workers goes offline (beta feature)</label>
@@ -16,7 +16,7 @@
             <div class="form-group"><label for="ip">To save, validate your account by completing the IP given below (the IP corresponds to the public IP address of one of your workers):</label>
                 {{input value=model.threshold class="form-control"}}
             </div>
-            <button {{action "submitthreshold"}} class="btn btn-default">Save</button></form>
+            <button class="btn btn-default">Save</button></form>
     </div>
 
 </div>

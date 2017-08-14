@@ -21,6 +21,12 @@ export default Ember.Controller.extend({
             return parseInt(this.get('model.stats.roundShares'));
         }
     }),
+    
+    ethinr: Ember.computed('stats', {
+        get() {
+            return parseFloat(this.get('model.exchangedata.price_inr'));
+        }
+    }),
 
     difficulty: Ember.computed('model.nodes', {
         get() {

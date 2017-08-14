@@ -16,7 +16,7 @@
             <td>
               <a href="https://etherscan.io/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
             </td>
-            <td>{{format-balance tx.amount}}</td>
+            <td>{{format-balance tx.amount}}<br/><em><small>≅ {{ format-ethinr tx.amount model.exchangedata.price_inr }}</small></em></td>
           </tr>
         {{/each}}
       </tbody>

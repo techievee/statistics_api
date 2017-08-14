@@ -6,7 +6,8 @@
             <thead>
                 <tr>
                     <th>Timeline</th>
-                    <th>Reward</th>                   
+                    <th>Reward</th>     
+                    <th>≅ INR</th>
                 </tr>
             </thead>
             <tbody>
@@ -14,6 +15,7 @@
                 <tr>
                     <td>{{sumreward.name}}</td>
                     <td>{{format-balance sumreward.reward}}</td>
+                    <td><em><small>≅ {{ format-ethinr sumreward.reward model.exchangedata.price_inr }}</small></em></td>
                 </tr>
                 {{/each}}
             </tbody>

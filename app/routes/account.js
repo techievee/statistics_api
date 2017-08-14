@@ -22,7 +22,7 @@ export default Ember.Route.extend({
                 return this.transitionTo('not-found');
             }
         },
-        submitthreshold()
+        saveSettings()
         {
             
         }

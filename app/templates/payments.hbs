@@ -17,7 +17,7 @@
             </span>
             <br/>
             <span  style="font-family: Arvo; margin-top:50px; border-bottom: none;">
-                <strong>Total Payment Send :</strong> <span class="label label-success">{{model.paymentsTotal}}</span>                 
+                <strong>Total Payment Send :</strong> <span class="label label-success">{{model.paymentsTotal}}</span> 
             </span>
         </div>
         <!-- /.col-lg-12 -->
@@ -46,7 +46,7 @@
                                 {{#each model.payments as |tx|}}
                                 <tr>
                                     <td>{{format-date-locale tx.timestamp}}</td>
-                                    <td>{{format-number tx.formatAmount}}</td>
+                                    <td><strong>{{format-number tx.formatAmount}}</strong><br/><em><small>≅ {{ format-ethinr tx.amount model.exchangedata.price_inr }}</small></em></td>
                                     <td>
                                         <a href="https://etherscan.io/address/{{tx.address}}" class="hash" rel="nofollow" target="_blank">{{tx.address}}</a>
                                     </td>

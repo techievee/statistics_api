@@ -26,13 +26,13 @@ module.exports = function (environment) {
             StratumPort: 8008,
 
             // Fee and payout details
-            PoolFee: '1%',
-            PayoutThreshold: '0.5 Ether',
+            PoolFee: '0%',
+            PayoutThreshold: '100000000',
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 14.4
-            
-            
+
+
         }
     };
 
@@ -81,7 +81,6 @@ module.exports = function (environment) {
             'https://syndication.twitter.com',
             'http://platform.twitter.com']
     };
-
-
+  
     return ENV;
 };

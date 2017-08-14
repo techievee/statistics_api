@@ -142,7 +142,7 @@
                     </a>                       
                     <a href="#" class="list-group-item">
                         <i class="fa fa-ticket fa-fw"></i> Payment Threshold
-                        <span class="pull-right text-muted small"><em>{{config.PayoutThreshold}}</em>
+                        <span class="pull-right text-muted small"><em>{{format-balance config.PayoutThreshold}}</em>
                         </span>
                     </a>
                     <a href="#" class="list-group-item">
@@ -151,9 +151,9 @@
                         </span>
                     </a>
                     <a href="#" class="list-group-item">
-                        <i class="fa fa-inr fa-fw"></i> ETH-INR
-                        <span class="pull-right text-muted small"> <em><i class="fa fa-inr fa-fw"></i>17000</em>
-                        </span>
+                        <i class="fa fa-inr fa-fw"></i> ETH-INR 
+                        <span class="pull-right text-muted small text-blue">≅ <em>{{ format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'  }}</em>
+                        </span><br/><span class="text-muted small text-blue"><em>{{format-date-locale stats.model.exchangedata.last_updated }}</em></span>
                     </a>
                 </div>
                 <!-- /.list-group -->                    

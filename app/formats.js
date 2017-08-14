@@ -13,6 +13,7 @@ export default {
   },
   number: {
     EUR: { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 },
-    USD: { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 }
+    USD: { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 },
+    INR: { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 2 ,  useGrouping: false }
   }
 };
