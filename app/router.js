@@ -23,6 +23,7 @@ Router.map(function() {
   this.route('help');
   this.route('payments');
   this.route('miners');
+  this.route('exchange');
   this.route('about');
 });
 

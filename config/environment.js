@@ -81,6 +81,6 @@ module.exports = function (environment) {
             'https://syndication.twitter.com',
             'http://platform.twitter.com']
     };
-  
+
     return ENV;
 };
