@@ -120,6 +120,11 @@
                         <span class="pull-right text-muted small"><em>{{config.PoolFee}}</em>
                         </span>
                     </a>
+                     <a href="#" class="list-group-item">
+                        <i class="fa fa-sitemap fa-fw"></i> Share Difficulty
+                        <span class="pull-right text-muted small"><span class="label label-success"><em>4G</em></span>
+                        </span>
+                    </a>
                     <a href="#" class="list-group-item">
                         <i class="fa fa-unlock-alt fa-fw"></i> Network Difficulty
                         <span class="pull-right text-muted small"><em>{{with-metric-prefix stats.difficulty}}</em>
@@ -142,7 +147,7 @@
                     </a>
                     <a href="#" class="list-group-item">
                         <i class="fa fa-ticket fa-fw"></i> Payment Threshold
-                        <span class="pull-right text-muted small"><em>{{format-balance config.PayoutThreshold}}</em>
+                        <span class="pull-right text-muted small"><em>0.1 ETH (Configurable : 0.01 -10 ETH)</em>
                         </span>
                     </a>
                     <a href="#" class="list-group-item">
@@ -151,7 +156,7 @@
                         </span>
                     </a>
                     <a href="#" class="list-group-item">
-                        <i class="fa fa-inr fa-fw"></i> ETH-INR
+                        <i class="fa fa-credit-card-alt fa-fw"></i> ETH-INR
                         <span class="pull-right text-muted small text-blue">≅ <em>{{ format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'  }}</em>
                         </span><br/><span class="text-muted small text-blue"><em>{{format-date-locale stats.model.exchangedata.last_updated }}</em></span>
                     </a>
@@ -237,6 +242,9 @@
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-credit-card fa-fw"></i> We pay all Ethereum rewards (Blocks, Uncles)
+                                      </li>
+                                         <li class="list-group-item">
+                                        <i class="fa fa-credit-card fa-fw"></i> Share Difficulty : 4G, Efficient for miners
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-money fa-fw"></i> 0% Pool fees as introductory offer
@@ -346,7 +354,7 @@
                                                   setx GPU_USE_SYNC_OBJECTS 1<br/>
                                                   setx GPU_MAX_ALLOC_PERCENT 100<br/>
                                                   setx GPU_SINGLE_ALLOC_PERCENT 100<br/>
-                                                  <h4>EthDcrMiner64.exe -epool {{config.StratumHost}}:{{config.StratumPort}} -ewal <kbd>ETHADDRESS</kbd> -eworker <kbd>WORKERNAME</kbd></h4>
+                                                  <h4>EthDcrMiner64.exe -epool eth-pune.miningpoolindia.com:8008 -ewal <kbd>ETHADDRESS</kbd> -eworker <kbd>WORKERNAME</kbd> -allcoins 1</h4>
                                                 </span>
                                               </li>
 
@@ -359,10 +367,10 @@
                                             <h4><i class="fa fa-database fa-fw"></i>Backup Servers</h4>
                                             <ul class="list-group">
                                               <li class="list-group-item">
-                                                  Mumbai :{{config.HttpHost}}:{{config.HttpPort}}
+                                                  Mumbai :eth-mumbai.miningpoolindia.com:8008 {FUTURE}
                                               </li>
                                               <li class="list-group-item">
-                                                Chennai :{{config.HttpHost}}:{{config.HttpPort}}
+                                                Chennai :eth-chennai.miningpoolindia.com:8008 {FUTURE}
                                               </li>
 
                                             </ul>
@@ -427,12 +435,12 @@
                                                   MONITORING = False<br/>
                                                   MONITORING_EMAIL = ""<br/>
                                                   # Main pool
-                                                  POOL_HOST = "{{config.StratumHost}}"<br/>
-                                                  POOL_PORT = {{config.StratumPort}}<br/>
+                                                  POOL_HOST = "eth-pune.miningpoolindia.com"<br/>
+                                                  POOL_PORT = 8008<br/>
                                                   POOL_FAILOVER_ENABLE = True<br/>
-                                                  POOL_HOST_FAILOVER1 = "eth-ru.dwarfpool.com"<br/>
+                                                  POOL_HOST_FAILOVER1 = "eth-mumbai.miningpoolindia.com"<br/>
                                                   POOL_PORT_FAILOVER1 = 8008<br/>
-                                                  POOL_HOST_FAILOVER2 = "eth-us.dwarfpool.com"<br/>
+                                                  POOL_HOST_FAILOVER2 = "eth-chennai.miningpoolindia.com"<br/>
                                                   POOL_PORT_FAILOVER2 = 8008<br/>
                                                   LOG_TO_FILE = True<br/>
                                                   DEBUG = False<br/>
@@ -510,7 +518,7 @@
                                       <ul class="list-group">
                                         <li class="list-group-item">
                                                 <span style="font-family: 'Anonymous Pro';">
-                                                  ethminer.exe http://miningpoolindia.com:8888/<kbd>ETHEREUMADDRESS</kbd>/<kbd>WORKERNAME</kbd>
+                                                  ethminer.exe http://eth-pune.miningpoolindia.com:8888/<kbd>ETHEREUMADDRESS</kbd>/<kbd>WORKERNAME</kbd>
                                                 </span>
                                         </li>
 
