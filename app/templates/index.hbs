@@ -64,6 +64,8 @@
                         </span> </h3>
                     <p> {{#if stats.model.stats.lastBlockFound}}
                         <i class="fa fa-clock-o"></i> Last Block : <span>{{format-relative (seconds-to-ms stats.model.stats.lastBlockFound)}}</span>
+                        {{else}}
+                        NEW POOL
                         {{/if}}    </p>
 
                 </div>
@@ -244,7 +246,7 @@
                                         <i class="fa fa-credit-card fa-fw"></i> We pay all Ethereum rewards (Blocks, Uncles)
                                       </li>
                                          <li class="list-group-item">
-                                        <i class="fa fa-credit-card fa-fw"></i> Share Difficulty : 4G, Efficient for miners
+                                        <i class="fa fa-sitemap fa-fw"></i> Share Difficulty : 4G, Efficient for miners
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-money fa-fw"></i> 0% Pool fees as introductory offer
