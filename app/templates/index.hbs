@@ -65,7 +65,7 @@
                     <p> {{#if stats.model.stats.lastBlockFound}}
                         <i class="fa fa-clock-o"></i> Last Block : <span>{{format-relative (seconds-to-ms stats.model.stats.lastBlockFound)}}</span>
                         {{else}}
-                        NEW POOL
+                        NO NEW BLOCKS
                         {{/if}}    </p>
 
                 </div>
@@ -149,7 +149,7 @@
                     </a>
                     <a href="#" class="list-group-item">
                         <i class="fa fa-ticket fa-fw"></i> Payment Threshold
-                        <span class="pull-right text-muted small"><em>0.1 ETH (Configurable : 0.01 -10 ETH)</em>
+                        <span class="pull-right text-muted small"><em>0.1 ETH </em>
                         </span>
                     </a>
                     <a href="#" class="list-group-item">
@@ -356,7 +356,7 @@
                                                   setx GPU_USE_SYNC_OBJECTS 1<br/>
                                                   setx GPU_MAX_ALLOC_PERCENT 100<br/>
                                                   setx GPU_SINGLE_ALLOC_PERCENT 100<br/>
-                                                  <h4>EthDcrMiner64.exe -epool eth-pune.miningpoolindia.com:8008 -ewal <kbd>ETHADDRESS</kbd> -eworker <kbd>WORKERNAME</kbd> -allcoins 1</h4>
+                                                  <h4>EthDcrMiner64.exe -epool eth-p1.miningpoolindia.com:8008 -ewal <kbd>ETHADDRESS</kbd> -eworker <kbd>WORKERNAME</kbd> -allcoins 1</h4>
                                                 </span>
                                               </li>
 
@@ -369,10 +369,10 @@
                                             <h4><i class="fa fa-database fa-fw"></i>Backup Servers</h4>
                                             <ul class="list-group">
                                               <li class="list-group-item">
-                                                  Mumbai :eth-mumbai.miningpoolindia.com:8008 {FUTURE}
+                                                  Mumbai :eth-m1.miningpoolindia.com:8008 {FUTURE}
                                               </li>
                                               <li class="list-group-item">
-                                                Chennai :eth-chennai.miningpoolindia.com:8008 {FUTURE}
+                                                Chennai :eth-c1.miningpoolindia.com:8008 {FUTURE}
                                               </li>
 
                                             </ul>
@@ -437,12 +437,12 @@
                                                   MONITORING = False<br/>
                                                   MONITORING_EMAIL = ""<br/>
                                                   # Main pool
-                                                  POOL_HOST = "eth-pune.miningpoolindia.com"<br/>
+                                                  POOL_HOST = "eth-p1.miningpoolindia.com"<br/>
                                                   POOL_PORT = 8008<br/>
                                                   POOL_FAILOVER_ENABLE = True<br/>
-                                                  POOL_HOST_FAILOVER1 = "eth-mumbai.miningpoolindia.com"<br/>
+                                                  POOL_HOST_FAILOVER1 = "eth-m1.miningpoolindia.com"<br/>
                                                   POOL_PORT_FAILOVER1 = 8008<br/>
-                                                  POOL_HOST_FAILOVER2 = "eth-chennai.miningpoolindia.com"<br/>
+                                                  POOL_HOST_FAILOVER2 = "eth-c1.miningpoolindia.com"<br/>
                                                   POOL_PORT_FAILOVER2 = 8008<br/>
                                                   LOG_TO_FILE = True<br/>
                                                   DEBUG = False<br/>
@@ -520,7 +520,7 @@
                                       <ul class="list-group">
                                         <li class="list-group-item">
                                                 <span style="font-family: 'Anonymous Pro';">
-                                                  ethminer.exe http://eth-pune.miningpoolindia.com:8888/<kbd>ETHEREUMADDRESS</kbd>/<kbd>WORKERNAME</kbd>
+                                                  ethminer.exe http://eth-p1.miningpoolindia.com:8888/<kbd>ETHEREUMADDRESS</kbd>/<kbd>WORKERNAME</kbd>
                                                 </span>
                                         </li>
 
