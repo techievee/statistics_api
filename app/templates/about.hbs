@@ -75,13 +75,13 @@ As mining is an intensive task for the hardware of your computer (CPU, GPU), the
                                
                              <li class="list-group-item">
                                 
-Pool pays using the  Pay-Per-Last-N-Shares ("PPLNS") payout scheme. This reward system is round based, whereby one round has an arbitrary number (N) of minutes. When a block has been found by the pool, the block reward is distributed according to the number and difficulty of the shares submitted during the last hour. Payout takes place immediately after the minimum payout amount of 0.1 "Ether" has been reached. However, the payout threshold is customizable (minimum 0,1 "Ether", maximum 10 "Ether") by sending mail to the pool helpdesk. 
+Pool pays using the  Dynamic Pay-Per-Last-N-Shares ("PPLNS") payout scheme. This reward system is round based, whereby one round has an arbitrary number (N) of shares, N value are decided at the beginning of each round based on the Network difficulty, N = (2* Network Difficulty)/(Share Difficulty). When a block has been found by the pool, the block reward is distributed according to the number of the shares present in the last N Shares. Payout takes place immediately after the minimum payout amount of 0.1 "Ether" has been reached. However, the payout threshold is customizable (minimum 0,1 "Ether", maximum 10 "Ether") by sending mail to the pool helpdesk. 
                              </li>
                              
                                
                              <li class="list-group-item">
                                
-                            The pool fee is waived off as a introductory offer, but the Network transaction fees for the transfer need to be paid by the miner 
+                            The pool fee is waived off as a introductory offer, but the Transaction fees of the block are retained by the pool till the fee is fixed 
 
  
                              </li>

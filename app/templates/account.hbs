@@ -143,10 +143,16 @@
                     {{/if}}
 
                     <li href="#" class="list-group-item">
-                        <i class="fa fa-spinner fa-fw"></i> Your round share
+                        <i class="fa fa-spinner fa-fw"></i> Your contribution in Last 'N'
                         <span class="pull-right text-muted small"><em>{{format-number roundPercent style='percent' maximumFractionDigits='6'}}</em>
                         </span>
                     </li>
+                    <li href="#" class="list-group-item">
+                        <i class="fa fa-thermometer fa-fw"></i> My Shares in the last 'N'
+                        <span class="pull-right text-muted small"><em>{{format-number model.roundShares}}</em>
+                        </span>
+                    </li>
+                    
                     <li href="#" class="list-group-item">
                         <i class="fa fa-cubes fa-fw"></i> Blocks Found
                         <span class="pull-right text-muted small"><em>{{format-number model.stats.blocksFound fallback='0'}}</em>
