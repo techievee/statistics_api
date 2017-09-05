@@ -27,6 +27,12 @@ export default Ember.Controller.extend({
             return parseFloat(this.get('model.exchangedata.price_inr'));
         }
     }),
+    
+     ethusd: Ember.computed('stats', {
+        get() {
+            return parseFloat(this.get('model.exchangedata.price_usd'));
+        }
+    }),
 
     difficulty: Ember.computed('model.nodes', {
         get() {
@@ -80,7 +86,7 @@ export default Ember.Controller.extend({
             return percent.toFixed(2);
         }
     }),
-
+   
     nextEpoch: Ember.computed('height', {
         get() {
             var epochOffset = (30000 - (this.getWithDefault('height', 1) % 30000)) * 1000 * this.get('config').BlockTime;

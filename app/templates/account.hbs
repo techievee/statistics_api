@@ -4,7 +4,7 @@
             <span  class="text-blue"style="font-family: 'Fredericka the Great'; font-size: 30px;margin-top:50px;" >MINERS STATISTICS</span>
         </div>
         <div class="col-lg-8 pull-left"  >
-            <span class="text-green" style="font-family: 'Merriweather Sans';font-size: 25px;margin-top:50px;"><i class="fa fa-address-book-o"></i> <a class="text-green" href="https://etherchain.org/account/{{model.login}}" target="_blank">{{model.login}}</a>                                       
+            <span class="text-green" style="font-family: 'Merriweather Sans';font-size: 25px;margin-top:50px;"><i class="fa fa-address-book-o"></i> <a class="text-green" href="{{config.ChainAddress}}{{model.login}}" target="_blank">{{model.login}}</a>                                       
             </span>
         </div>
         <!-- /.col-lg-12 -->
@@ -90,7 +90,14 @@
                     <h3><span class="text-white" style="font-size: 30px;">
                             {{format-balance model.stats.paid}}
                         </span> </h3>
-                    <p>  ≅ {{ format-ethinr model.stats.paid model.exchangedata.price_inr }}</p>
+                    <p>  ≅ 
+                        
+                        {{#if (eq config.Currency 'USD') }}
+                        {{ format-ethusd model.stats.paid model.exchangedata.price_usd }}
+                        {{else}}
+                        {{ format-ethinr model.stats.paid model.exchangedata.price_inr }}
+                        {{/if}}
+                    </p>
 
                 </div>
                 <div class="icon"> <i class="fa fa-credit-card"></i> </div>
@@ -128,9 +135,9 @@
                         <span class="pull-right text-muted small align-middle"><span class=""><em>{{format-balance model.stats.balance}}</em></span>
                         </span>
                         {{#if model.stats.payoutthreshold}}                        
-                        <br/> <small>Payout threshold: {{format-balance model.stats.payoutthreshold}}</small>
+                        <br/> <small>Payout threshold: {{format-balance model.stats.payoutthreshold}}{{config.CoinShortName}}</small>
                         {{else}}
-                        <br/> <small>Payout threshold: 0.10000000</small>
+                        <br/> <small>Payout threshold: {{config.PayoutThreshold}} {{config.CoinShortName}}</small>
                         {{/if}}
 
                     </li>
@@ -189,8 +196,8 @@
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body hidden-sm ">
-                    {{#twitter-feed}}                    
-                    <a class="twitter-timeline" href="https://twitter.com/miningpoolindia">Tweets by miningpoolindia</a> 
+                    {{#twitter-feed}}
+                    <a class="twitter-timeline" href="{{config.TwitterURL}}{{config.TwitterHash}}">Tweets by {{config.TwitterHash}}</a>
                     {{/twitter-feed}}
                 </div>
                 <!-- /.panel-body -->

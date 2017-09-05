@@ -14,9 +14,18 @@
           <tr>
             <td>{{format-date-locale tx.timestamp}}</td>
             <td>
-              <a href="https://etherscan.io/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
+              <a href="{{config.TransactionAddress}}{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
             </td>
-            <td>{{format-balance tx.amount}}<br/><em><small>≅ {{ format-ethinr tx.amount model.exchangedata.price_inr }}</small></em></td>
+            <td>{{format-balance tx.amount}}<br/><em><small>≅ 
+                        
+                        {{#if (eq config.Currency 'USD') }}
+                        {{ format-ethusd tx.amount model.exchangedata.price_usd }}
+                        {{else}}
+                        {{ format-ethinr tx.amount model.exchangedata.price_inr }}
+                        {{/if}}
+
+                    
+                    </small></em></td>
           </tr>
         {{/each}}
       </tbody>

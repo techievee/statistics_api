@@ -4,7 +4,7 @@
             <span  class="text-blue"style="font-family: 'Fredericka the Great'; font-size: 35px;margin-top:50px;" >POOL STATISTICS</span>
         </div>
         <div class="col-lg-8" style="margin-bottom: 20px;" >
-            <span  style="font-family: Lobster; margin-top:50px; border-bottom: none;">Welcome to high performance ethereum mining pool. The servers are located at india for low latency of the users of India. This pool provides the same level of mining efficiency and service as other popular pools. The pool pays out using the traditional & fair Dynamic PPLNS mode. Payouts are processed twice in a day and it would be gradually increased.
+            <span  style="font-family: Lobster; margin-top:50px; border-bottom: none;">Welcome to high performance {{config.CoinName}} mining pool. This pool provides higher profit in comparison to other popular pools for Miners who are not hopping the pool by employing Dynamic realtime PPLNS payments mode. Payouts are processed {{config.PaymentText}}.
             </span>
         </div>
         <!-- /.col-lg-12 -->
@@ -85,7 +85,13 @@
             <div class="small-box bg-red">
                 <div class="inner ">
                     <h3><span class="text-white">
-                            {{ format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'  }}
+                            {{#if (eq config.Currency 'USD') }}
+                            {{format-number  stats.model.exchangedata.price_usd style='currency' currency='USD'}}
+                            {{else}}
+                            {{format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'}}                            
+                            {{/if}}
+                           
+                            
                         </span> </h3>
                     <p> {{format-date-locale stats.model.exchangedata.last_updated }} </p>
 
@@ -172,17 +178,21 @@
                     </a>
                     <a class="list-group-item">
                         <i class="fa fa-ticket fa-fw"></i> Payment Threshold
-                        <span class="pull-right text-muted small"><em>0.1 ETH </em>
+                        <span class="pull-right text-muted small"><em>{{config.PayoutThreshold}} {{config.CoinShortName}} </em>
                         </span>
                     </a>
                     <a  class="list-group-item">
                         <i class="fa fa-money fa-fw"></i> Payout
-                        <span class="pull-right text-muted small"><em>twice a day</em>
+                        <span class="pull-right text-muted small"><em>{{config.PaymentText}}</em>
                         </span>
                     </a>
                     <a class="list-group-item">
-                        <i class="fa fa-credit-card-alt fa-fw"></i> ETH-INR
-                        <span class="pull-right text-muted small text-blue">≅ <em>{{ format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'  }}</em>
+                        <i class="fa fa-credit-card-alt fa-fw"></i> ETH-{{config.Currency}}
+                        <span class="pull-right text-muted small text-blue">≅ <em>{{#if (eq config.Currency 'USD') }}
+                            {{format-number  stats.model.exchangedata.price_usd style='currency' currency='USD'}}
+                            {{else}}
+                            {{format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'}}                            
+                            {{/if}}</em>
                         </span><br/><span class="text-muted small text-blue"><em>{{format-date-locale stats.model.exchangedata.last_updated }}</em></span>
                     </a>
                 </div>
@@ -201,7 +211,7 @@
                 <!-- /.panel-heading -->
                 <div class="panel-body">
                     {{#twitter-feed}}
-                    <a class="twitter-timeline" href="https://twitter.com/miningpoolindia">Tweets by miningpoolindia</a>
+                    <a class="twitter-timeline" href="{{config.TwitterURL}}{{config.TwitterHash}}">Tweets by {{config.TwitterHash}}</a>
                     {{/twitter-feed}}
                 </div>
                 <!-- /.panel-body -->
@@ -263,31 +273,31 @@
                                         <i class="fa fa-share-square-o fa-fw"></i> Dynamic PPLNS payout scheme, 'N' Value is fixed at the beginning of each round as 2*Block chain Difficulty
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-inr fa-fw"></i> Interface customized for INR Values of corresponding ETH Values
+                                        <i class="fa fa-credit-card fa-fw"></i> Interface customized for {{config.Currency}} Values of corresponding ETH Values
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-credit-card fa-fw"></i> We pay all Ethereum rewards (Blocks, Uncles)
+                                        <i class="fa fa-credit-card fa-fw"></i> We pay all {{config.CoinName}} rewards (Blocks, Uncles)
                                       </li>
                                          <li class="list-group-item">
-                                        <i class="fa fa-sitemap fa-fw"></i> Share Difficulty : 4G, Efficient for miners
+                                        <i class="fa fa-sitemap fa-fw"></i> Share Difficulty : {{config.ShareDifficulty}}, Efficient for miners
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-money fa-fw"></i> 0% Pool fees as introductory offer
+                                        <i class="fa fa-money fa-fw"></i> {{config.PoolFee}} Pool fees as introductory offer
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-download fa-fw"></i> Payout are processed twice a day, it would be gradually increased with number of users (Default threshold : 0.1Ether)
+                                        <i class="fa fa-download fa-fw"></i> Payout are processed {{config.PaymentText}}, it would be gradually increased with number of users 
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-sun-o fa-fw"></i>Customizable minimum payment threshold (0.01Ether - 10 Ether), To customize, please send us email of your EthAddress, IP Address, Email and Payout threshold to helpdesk<i class="fa fa-at fa-fw"></i>miningpoolindia.com
+                                        <i class="fa fa-sun-o fa-fw"></i>Customizable minimum payment threshold, To customize, please send us email of your {{config.CoinShortName}}Address, IP Address, Email and Payout threshold to {{config.SupportMail}}
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-shield fa-fw"></i>DDOS protected servers in the Various regions of India
+                                        <i class="fa fa-shield fa-fw"></i>DDOS protected servers
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-server fa-fw"></i>24/7 availability via failover servers
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-sitemap fa-fw"></i> Full stratum support (supports all ethereum miners)
+                                        <i class="fa fa-sitemap fa-fw"></i> Full stratum support (supports all type of miners)
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-fast-forward fa-fw"></i> Efficient mining engine, low uncle rates
@@ -296,7 +306,7 @@
                                         <i class="fa fa-bar-chart fa-fw"></i> Detailed global and per-worker statistics
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-envelope fa-fw"></i> Professional Helpdesk  <a target="_blank" href="http://helpdesk.miningpoolindia.com">  Helpdesk  </a>
+                                        <i class="fa fa-envelope fa-fw"></i> Professional Helpdesk  <a target="_blank" href="{{config.SupportHelpdesk}}">  Helpdesk  </a>
                                       </li>
 
                                     </ul>
@@ -322,12 +332,9 @@
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-compass fa-fw"></i> Multiple Servers at various Regions
-                                      </li>
+                                      </li>                                     
                                       <li class="list-group-item">
-                                        <i class="fa fa-usd fa-fw"></i> Customization of interface for various currencies(USD. GBP etc)
-                                      </li>
-                                      <li class="list-group-item">
-                                        <i class="fa fa-language fa-fw"></i>  Various Indian Language options
+                                        <i class="fa fa-language fa-fw"></i>  Various Language options
                                       </li>
                                     </ul>
                                   </div>

@@ -4,7 +4,7 @@
             <span  class="text-blue"style="font-family: 'Fredericka the Great'; font-size: 30px;margin-top:50px; " >TERMS AND CONDITIONS</span>
         </div>       
           <div class="col-lg-7" style="margin-bottom: 20px;" >
-            <span  style="font-family: Lobster; margin-top:50px; border-bottom: none;">The following Terms and Condition apply to any use of the mining pool services ("Services") offered over the websites ("miningpoolindia.com") mentioned above concerning the mining of the cryptocurrencies "Ethereum". By accessing and using the Services, you confirm that you have read these Terms and Condition and accept and agree to be bound by its provisions. Any factual participation in the Services will constitute such acceptance. If you do not agree to abide by these Terms and Condition you are not allowed to use the Services.
+            <span  style="font-family: Lobster; margin-top:50px; border-bottom: none;">The following Terms and Condition apply to any use of the mining pool services ("Services") offered over the websites ("{{config.WebsiteName}}") mentioned above concerning the mining of the cryptocurrencies "{{config.CoinName}}". By accessing and using the Services, you confirm that you have read these Terms and Condition and accept and agree to be bound by its provisions. Any factual participation in the Services will constitute such acceptance. If you do not agree to abide by these Terms and Condition you are not allowed to use the Services.
                 <br/>In order to use the Services, a mining software working with the operating system on your computer is necessary. Download links are available directly on the Websites. .
             </span>
         </div>
@@ -23,15 +23,16 @@
                     <div id="term" class="panel-collapse">
                          <ul class="list-group">
                              <li class="list-group-item">
-                                 The pool is continually implementing security standards complying with the latest state-of-the-art technology. All operated servers located in the India are distributed-denial-of-service (DDOS) protected to ensure an incessant availability of the Services and a payout process without unwanted interruptions. The Services are also designed to pay out rewards as soon as possible in order to keep the pool balance low. 
+                                 The pool is continually implementing security standards complying with the latest state-of-the-art technology. All operated servers are distributed-denial-of-service (DDOS) protected to ensure an incessant availability of the Services and a payout process without unwanted interruptions. The Services are also designed to pay out rewards as soon as possible in order to keep the pool balance low. 
                                  
                              </li>
                              
-                              <li class="list-group-item">
+                             {{#if (eq config.Currency 'INR') }} 
+                             <li class="list-group-item">
                                  Having the name india in the domain name, it doesnt state that the pool belongs to india, the customization of various values are done for the INR value . All the other country citizen can also participate in the pool. 
                                  
                              </li>
-                             
+                             {{/if}}
                               <li class="list-group-item">
                                    Despite such protective mechanisms, the pool cannot fully guarantee that the Websites will never be subject to hacker attacks or similar problems. Therefore, the pool shall not be obliged to compensate any losses due to stolen pool balance or temporary unavailability of the Services. The pool explicitly reserves the right to shut down services from time to time for maintenance reasons.
                              </li>
@@ -43,7 +44,7 @@
                              </li>
                              
                              <li class="list-group-item">
-                                Ethereum are highly experimental crypto software. Damages or loss of cryptocurrency units arising from software errors therefore remain possible. As the pool  has no influence on the underlying software, he shall not in any case be exposed to claims relating to such errors. 
+                                {{config.CoinName}} are highly experimental crypto software. Damages or loss of cryptocurrency units arising from software errors therefore remain possible. As the pool  has no influence on the underlying software, he shall not in any case be exposed to claims relating to such errors. 
                              </li>
                            
                              
@@ -75,7 +76,7 @@ As mining is an intensive task for the hardware of your computer (CPU, GPU), the
                                
                              <li class="list-group-item">
                                 
-Pool pays using the  Dynamic Pay-Per-Last-N-Shares ("PPLNS") payout scheme. This reward system is round based, whereby one round has an arbitrary number (N) of shares, N value are decided at the beginning of each round based on the Network difficulty, N = (2* Network Difficulty)/(Share Difficulty). When a block has been found by the pool, the block reward is distributed according to the number of the shares present in the last N Shares. Payout takes place immediately after the minimum payout amount of 0.1 "Ether" has been reached. However, the payout threshold is customizable (minimum 0,1 "Ether", maximum 10 "Ether") by sending mail to the pool helpdesk. 
+Pool pays using the  Dynamic Pay-Per-Last-N-Shares ("PPLNS") payout scheme. This reward system is round based, whereby one round has an arbitrary number (N) of shares, N value are decided at the beginning of each round based on the Network difficulty, N = (2* Network Difficulty)/(Share Difficulty). When a block has been found by the pool, the block reward is distributed according to the number of the shares present in the last N Shares. Payout takes place immediately after the minimum payout has been reached. However, the payout threshold is customizable by sending mail to the pool helpdesk. 
                              </li>
                              
                                

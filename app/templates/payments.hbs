@@ -5,15 +5,15 @@
         </div>
         <div class="col-lg-7" style="margin-bottom: 20px;" >
             <span  style="font-family: Arvo; margin-top:50px; border-bottom: none;">
-                <strong>Pool pays using the Efficient Dynamic PPLNS Reward system    </strong>                                   
+                <strong>Pool pays using the Highly Profitable Dynamic PPLNS Reward system    </strong>                                   
             </span>
             <br/>
             <span  style="font-family: Arvo; margin-top:50px; border-bottom: none;">
-                <strong>Current Fool Fee is </strong> <span class="label label-success">0%</span> only                    
+                <strong>Current Fool Fee is </strong> <span class="label label-success">{{config.PoolFee}}</span> only                    
             </span>
             <br/>
             <span  style="font-family: Arvo; margin-top:50px; border-bottom: none;">
-                <strong>Payouts are currently credited to miners account</strong> <span class="label label-success">twice</span> in a day                    
+                <strong>Payouts are currently credited to miners account</strong> <span class="label label-success">{{config.PaymentText}}</span>
             </span>
             <br/>
             <span  style="font-family: Arvo; margin-top:50px; border-bottom: none;">
@@ -46,12 +46,19 @@
                                 {{#each model.payments as |tx|}}
                                 <tr>
                                     <td>{{format-date-locale tx.timestamp}}</td>
-                                    <td><strong>{{format-number tx.formatAmount}}</strong><br/><em><small>≅ {{ format-ethinr tx.amount model.exchangedata.price_inr }}</small></em></td>
+                                    <td><strong>{{format-number tx.formatAmount}}</strong><br/><em><small>≅ 
+                                                 {{#if (eq config.Currency 'USD') }}
+                                                {{ format-ethusd tx.amount model.exchangedata.price_usd }}
+                                                {{else}}
+                                                {{ format-ethinr tx.amount model.exchangedata.price_inr }}
+                                                {{/if}}                                               
+                                            
+                                            </small></em></td>
                                     <td>
-                                        <a href="https://etherscan.io/address/{{tx.address}}" class="hash" rel="nofollow" target="_blank">{{tx.address}}</a>
+                                        <a href="{{config.ChainAddress}}{{tx.address}}" class="hash" rel="nofollow" target="_blank">{{tx.address}}</a>
                                     </td>
                                     <td>
-                                        <a href="https://etherscan.io/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{format-tx tx.tx}}</a>
+                                        <a href="{{config.TransactionAddress}}{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{format-tx tx.tx}}</a>
                                     </td>
                                 </tr>
                                 {{/each}}

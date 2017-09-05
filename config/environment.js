@@ -18,16 +18,37 @@ module.exports = function (environment) {
             ApiUrl: '//miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://miningpoolindia.com',
-            HttpPort: 8888,
+            HttpHost: 'http://35.185.182.123',
+            HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'miningpoolindia.com',
+            StratumHost: '35.185.182.123',
             StratumPort: 8008,
 
             // Fee and payout details
             PoolFee: '0%',
-            PayoutThreshold: '100000000',
+            PayoutThreshold: '0.1',
+            ShareDifficulty: '4G',
+            
+            //Current and Localization
+            Currency: 'USD',
+            CoinName: 'Ethereum',
+            CoinShortName: 'Eth',
+            PaymentText: 'twice in a day',
+            SupportMail: 'helpdesk@miningpoolindia.com',
+            SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
+            WebsiteName: 'miningpoolindia.com',
+            
+            //Coin Bases Settings
+            ChainAddress : 'https://etherchain.org/account/',
+            TransactionAddress : 'https://etherscan.io/tx/',
+            UncleAddress : 'https://etherscan.io/uncle/',
+            BlockAddress : 'https://etherscan.io/block/',
+            
+            //Twitter Parameter
+            TwitterURL: 'https://twitter.com/',
+            TwitterHash: 'miningpoolindia',
+            
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 14.4
@@ -40,7 +61,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'http://miningpoolindia.com/'
+        ENV.APP.ApiUrl = 'http://35.185.182.123/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
