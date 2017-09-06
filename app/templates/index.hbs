@@ -96,7 +96,13 @@
                     <p> {{format-date-locale stats.model.exchangedata.last_updated }} </p>
 
                 </div>
-                <div class="icon"> <i class="fa fa-inr"></i> </div>
+                <div class="icon">  
+                            {{#if (eq config.Currency 'USD') }}
+                            <i class="fa fa-usd"></i> 
+                            {{else}}
+                            <i class="fa fa-inr"></i>                         
+                            {{/if}}
+                            </div>  
                {{#link-to 'exchange'}} 
                     <div class="panel-footer">
                         <span class="pull-left">View Exchange Data</span>
@@ -188,7 +194,8 @@
                     </a>
                     <a class="list-group-item">
                         <i class="fa fa-credit-card-alt fa-fw"></i> ETH-{{config.Currency}}
-                        <span class="pull-right text-muted small text-blue">≅ <em>{{#if (eq config.Currency 'USD') }}
+                        <span class="pull-right text-muted small text-blue">≅ <em>
+                            {{#if (eq config.Currency 'USD') }}
                             {{format-number  stats.model.exchangedata.price_usd style='currency' currency='USD'}}
                             {{else}}
                             {{format-number  stats.model.exchangedata.price_inr style='currency' currency='INR'}}                            
@@ -229,7 +236,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="input-group">
-                        {{input value=cachedLogin class="form-control" placeholder="Enter Your Ethereum Address"}}
+                        {{input value=cachedLogin class="form-control" placeholder="Enter Your Address"}}
                         <span class="input-group-btn">
                             <button class="btn btn-primary" type="button" {{action 'lookup' cachedLogin}}>
                                     <span style="display: inline;"><i class="fa fa-search"></i> SEARCH</span>
@@ -252,7 +259,7 @@
                         <li class="active"><a data-target="#general" data-toggle="tab"><i class="fa fa-info fa-fw"></i> GENERAL INFORMATION</a></li>
                         <li><a data-target="#claymore" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CLAYMORE</a></li>
                         <li><a data-target="#stratumproxy" data-toggle="tab"><i class="fa fa-download fa-fw"></i>STRATUM PROXY</a></li>
-                        <li><a data-target="#genoils" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CPP ETHEREUM</a></li>
+                        <li><a data-target="#genoils" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CPP VERSION</a></li>
                     </ul>
 
                     <div class="tab-content">
@@ -273,7 +280,7 @@
                                         <i class="fa fa-share-square-o fa-fw"></i> Dynamic PPLNS payout scheme, 'N' Value is fixed at the beginning of each round as 2*Block chain Difficulty
                                       </li>
                                       <li class="list-group-item">
-                                        <i class="fa fa-credit-card fa-fw"></i> Interface customized for {{config.Currency}} Values of corresponding ETH Values
+                                        <i class="fa fa-credit-card fa-fw"></i> Interface customized for {{config.Currency}} Values of corresponding {{config.CoinName}} Values
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-credit-card fa-fw"></i> We pay all {{config.CoinName}} rewards (Blocks, Uncles)
@@ -351,7 +358,7 @@
                                 <div class="panel">
                                     <div class="panel-body">
                                       <div class="panel panel-success">
-                                        <div class="panel-heading"> <i class="fa fa-download fa-fw"></i> Claymore's Dual Ethereum + Decred/Siacoin/Lbry/Pascal AMD+NVIDIA GPU Miner.<a href="https://bitcointalk.org/index.php?topic=1433925.0" target="_blank"><i class="fa fa-link fa-fw"></i></a></div>
+                                        <div class="panel-heading"> <i class="fa fa-download fa-fw"></i> Claymore's Dual GPU Miner.<a href="https://bitcointalk.org/index.php?topic=1433925.0" target="_blank"><i class="fa fa-link fa-fw"></i></a></div>
                                         <div class="panel-body">
 
                                           <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
@@ -386,7 +393,7 @@
                                                   setx GPU_USE_SYNC_OBJECTS 1<br/>
                                                   setx GPU_MAX_ALLOC_PERCENT 100<br/>
                                                   setx GPU_SINGLE_ALLOC_PERCENT 100<br/>
-                                                  <h4>EthDcrMiner64.exe -epool eth-p1.miningpoolindia.com:8008 -ewal <kbd>ETHADDRESS</kbd> -eworker <kbd>WORKERNAME</kbd> -allpools 0</h4>
+                                                  <h4>EthDcrMiner64.exe -epool {{config.Currency}} -ewal <kbd>{{config.StratumHost}}:{{config.StratumPort}}Address</kbd> -eworker <kbd>WORKERNAME</kbd>-allcoins 1 -allpools 0 </h4>
                                                 </span>
                                               </li>
 
@@ -399,10 +406,10 @@
                                             <h4><i class="fa fa-database fa-fw"></i>Backup Servers</h4>
                                             <ul class="list-group">
                                               <li class="list-group-item">
-                                                  Chennai :  eth-c1.miningpoolindia.com:8008 
+                                                Backup 1 : {{config.StratumHost1}}:{{config.StratumPort1}}
                                               </li>
                                               <li class="list-group-item">
-                                                 Mumbai :  eth-m1.miningpoolindia.com:8008
+                                                Backup 2 :{{config.StratumHost2}}:{{config.StratumPort2}}
                                               </li>
 
                                             </ul>
@@ -450,7 +457,7 @@
                                       <ul class="list-group">
                                         <li class="list-group-item">
                                                 <span style="font-family: 'Anonymous Pro';">
-                                                  <h4>ethminer.exe --farm-recheck 200 -G -F http://127.0.0.1:8080/<kbd>WORKERNAME</kbd></h4>
+                                                  <h4>ethminer.exe --farm-recheck 200 -G -F http://{{config.HttpHost}}:{{config.HttpPort}}<kbd>WORKERNAME</kbd></h4>
                                                 </span>
                                         </li>
 
@@ -459,21 +466,21 @@
                                       <ul class="list-group">
                                         <li class="list-group-item">
                                                 <span style="font-family: 'Anonymous Pro';">
-                                                  COIN = "ETH" <br/>
+                                                  COIN = "{{config.CoinName}}" <br/>
                                                   HOST = "0.0.0.0"<br/>
                                                   PORT = 8080<br/>
-                                                  WALLET = "<kbd>ETHADDRESS</kbd>"<br/>
+                                                  WALLET = "<kbd>ADDRESS</kbd>"<br/>
                                                   ENABLE_WORKER_ID = False<br/>
                                                   MONITORING = False<br/>
                                                   MONITORING_EMAIL = ""<br/>
                                                   # Main pool
-                                                  POOL_HOST = "eth-p1.miningpoolindia.com"<br/>
-                                                  POOL_PORT = 8008<br/>
+                                                  POOL_HOST = "{{config.StratumHost}}"<br/>
+                                                  POOL_PORT = {{config.StratumPort}}<br/>
                                                   POOL_FAILOVER_ENABLE = True<br/>
-                                                  POOL_HOST_FAILOVER1 = "eth-m1.miningpoolindia.com"<br/>
-                                                  POOL_PORT_FAILOVER1 = 8008<br/>
-                                                  POOL_HOST_FAILOVER2 = "eth-c1.miningpoolindia.com"<br/>
-                                                  POOL_PORT_FAILOVER2 = 8008<br/>
+                                                  POOL_HOST_FAILOVER1 = "{{config.StratumHost1}}"<br/>
+                                                  POOL_PORT_FAILOVER1 = {{config.StratumPort1}}<br/>
+                                                  POOL_HOST_FAILOVER2 = "{{config.StratumHost2}}"<br/>
+                                                  POOL_PORT_FAILOVER2 = {{config.StratumPort2}}<br/>
                                                   LOG_TO_FILE = True<br/>
                                                   DEBUG = False<br/>
                                                 </span>
@@ -550,7 +557,7 @@
                                       <ul class="list-group">
                                         <li class="list-group-item">
                                                 <span style="font-family: 'Anonymous Pro';">
-                                                  ethminer.exe http://eth-p1.miningpoolindia.com:8888/<kbd>ETHEREUMADDRESS</kbd>/<kbd>WORKERNAME</kbd>
+                                                  ethminer.exe http://{{config.HttpHost}}:{{config.HttpPort}}/<kbd>ADDRESS</kbd>/<kbd>WORKERNAME</kbd>
                                                 </span>
                                         </li>
 
