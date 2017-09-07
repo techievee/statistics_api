@@ -18,17 +18,17 @@ module.exports = function (environment) {
             ApiUrl: '//ubiq.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://ubiq-us01.miningpoolindia.com',
+            HttpHost: 'http://ubiq-us01.daggerpool.com',
             HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'ubiq-us01.miningpoolindia.com',
+            StratumHost: 'ubiq-us01.daggerpool.com',
             StratumPort: 8008,
 
-            StratumHost1: 'ubiq-us02.miningpoolindia.com',
+            StratumHost1: 'ubiq-us02.daggerpool.com',
             StratumPort1: 8008,
             
-            StratumHost2: 'ubiq-uk01.miningpoolindia.com',
+            StratumHost2: 'ubiq-uk01.daggerpool.com',
             StratumPort2: 8008,
 
             // Fee and payout details
