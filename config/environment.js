@@ -15,39 +15,45 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//miningpoolindia.com/',
+            ApiUrl: '//ubiq.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://35.185.182.123',
+            HttpHost: 'http://ubiq-us01.miningpoolindia.com',
             HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: '35.185.182.123',
+            StratumHost: 'ubiq-us01.miningpoolindia.com',
             StratumPort: 8008,
+
+            StratumHost1: 'ubiq-us02.miningpoolindia.com',
+            StratumPort1: 8008,
+            
+            StratumHost2: 'ubiq-uk01.miningpoolindia.com',
+            StratumPort2: 8008,
 
             // Fee and payout details
             PoolFee: '0%',
-            PayoutThreshold: '0.1',
+            PayoutThreshold: '0.5',
             ShareDifficulty: '4G',
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Ethereum',
-            CoinShortName: 'Eth',
+            CoinName: 'Ubiq',
+            CoinShortName: 'UBIQ',
             PaymentText: 'twice in a day',
-            SupportMail: 'helpdesk@miningpoolindia.com',
-            SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'miningpoolindia.com',
+            SupportMail: 'helpdesk@daggerpool.com',
+            SupportHelpdesk: 'http://helpdesk.daggerpool.com',
+            WebsiteName: 'ubiq.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://etherchain.org/account/',
-            TransactionAddress : 'https://etherscan.io/tx/',
-            UncleAddress : 'https://etherscan.io/uncle/',
-            BlockAddress : 'https://etherscan.io/block/',
+            ChainAddress : 'https://ubiqscan.io/en/address/',
+	    TransactionAddress : 'https://ubiqscan.io/en/tx/',
+            UncleAddress : 'https://ubiqscan.io/en/uncle/',
+            BlockAddress : 'https://ubiqscan.io/en/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
-            TwitterHash: 'miningpoolindia',
+            TwitterHash: 'daggerpool_com',
             
 
             // For network hashrate (change for your favourite fork)
@@ -61,7 +67,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'http://35.185.182.123/'
+        ENV.APP.ApiUrl = 'http://ubiq.daggerpool.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
@@ -88,8 +94,7 @@ module.exports = function (environment) {
         'script-src': [
             "'self'",
             'https://syndication.twitter.com',
-            'http://platform.twitter.com',
-            'https://cdn.syndication.twimg.com',
+			            'https://cdn.syndication.twimg.com',
             "'sha256-XnNQECY9o-nIv2Qgcd1A39YarwxTm10rhdzegH_JBxY='"],
         'style-src': [
             "'self'",
@@ -102,6 +107,5 @@ module.exports = function (environment) {
             'https://syndication.twitter.com',
             'http://platform.twitter.com']
     };
-
     return ENV;
 };
