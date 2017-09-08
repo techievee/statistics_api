@@ -393,7 +393,7 @@
                                                   setx GPU_USE_SYNC_OBJECTS 1<br/>
                                                   setx GPU_MAX_ALLOC_PERCENT 100<br/>
                                                   setx GPU_SINGLE_ALLOC_PERCENT 100<br/>
-                                                  <h4>EthDcrMiner64.exe -epool {{config.Currency}} -ewal <kbd>{{config.StratumHost}}:{{config.StratumPort}}Address</kbd> -eworker <kbd>WORKERNAME</kbd>-allcoins 1 -allpools 0 </h4>
+                                                  <h4>EthDcrMiner64.exe -epool {{config.StratumHost}}:{{config.StratumPort}} -ewal <kbd>{{config.CoinName}}Address</kbd> -eworker <kbd>WORKERNAME</kbd>-allcoins 1 -allpools 0 </h4>
                                                 </span>
                                               </li>
 
@@ -457,7 +457,7 @@
                                       <ul class="list-group">
                                         <li class="list-group-item">
                                                 <span style="font-family: 'Anonymous Pro';">
-                                                  <h4>ethminer.exe --farm-recheck 200 -G -F http://{{config.HttpHost}}:{{config.HttpPort}}<kbd>WORKERNAME</kbd></h4>
+                                                  <h4>ethminer.exe --farm-recheck 200 -G -F http://{{config.HttpHost}}:{{config.HttpPort}}/<kbd>WORKERNAME</kbd></h4>
                                                 </span>
                                         </li>
 
