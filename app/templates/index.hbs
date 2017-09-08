@@ -193,7 +193,7 @@
                         </span>
                     </a>
                     <a class="list-group-item">
-                        <i class="fa fa-credit-card-alt fa-fw"></i> ETH-{{config.Currency}}
+                        <i class="fa fa-credit-card-alt fa-fw"></i> {{config.CoinShortName}}-{{config.Currency}}
                         <span class="pull-right text-muted small text-blue">≅ <em>
                             {{#if (eq config.Currency 'USD') }}
                             {{format-number  stats.model.exchangedata.price_usd style='currency' currency='USD'}}
