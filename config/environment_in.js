@@ -15,21 +15,21 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//ubiq.miningpoolindia.com/',
+            ApiUrl: '//exp.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://ubiq01.miningpoolindia.com',
-            HttpPort: 8888,            
+            HttpHost: 'http://exp01.miningpoolindia.com',
+            HttpPort: 9999,            
 
             // Stratum mining endpoint
-            StratumHost: 'ubiq01.miningpoolindia.com',
-            StratumPort: 8008,
+            StratumHost: 'exp01.miningpoolindia.com',
+            StratumPort: 9009,
 
-            StratumHost1: 'ubiq01.miningpoolindia.com',
-            StratumPort1: 8008,
+            StratumHost1: 'exp02.miningpoolindia.com',
+            StratumPort1: 9009,
             
-            StratumHost2: 'ubiq02.miningpoolindia.com',
-            StratumPort2: 8008,
+            StratumHost2: 'exp01.miningpoolindia.com',
+            StratumPort2: 9009,
 
             // Fee and payout details
             PoolFee: '0%',
@@ -37,23 +37,23 @@ module.exports = function (environment) {
             ShareDifficulty: '4G',
             
             //Current and Localization
-            Currency: 'INR',
-            CoinName: 'Ubiq',
-            CoinShortName: 'UBIQ',
+            Currency: 'USD',
+            CoinName: 'Expanse',
+            CoinShortName: 'EXP',
             PaymentText: 'twice in a day',
-            SupportMail: 'helpdesk@daggerpool.com',
+            SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'ubiq.daggerpool.com',
+            WebsiteName: 'exp.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://ubiqscan.io/en/address/',
+            ChainAddress : 'http://www.gander.tech/address/',
 	    TransactionAddress : 'https://ubiqscan.io/en/tx/',
-            UncleAddress : 'https://ubiqscan.io/en/uncle/',
-            BlockAddress : 'https://ubiqscan.io/en/block/',
+            UncleAddress : 'http://www.gander.tech/uncle/',
+            BlockAddress : 'http://www.gander.tech/tx/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
-            TwitterHash: 'miningpoolindia',
+            TwitterHash: 'daggerpool_com',
             
 
             // For network hashrate (change for your favourite fork)
@@ -67,7 +67,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://ubiq.miningpoolindia.com/'
+        ENV.APP.ApiUrl = 'http://exp.miningpoolindia.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
