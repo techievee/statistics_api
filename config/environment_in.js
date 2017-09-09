@@ -47,7 +47,7 @@ module.exports = function (environment) {
             
             //Coin Bases Settings
             ChainAddress : 'http://www.gander.tech/address/',
-	    TransactionAddress : 'https://ubiqscan.io/en/tx/',
+	    TransactionAddress : 'http://www.gander.tech/tx/',
             UncleAddress : 'http://www.gander.tech/uncle/',
             BlockAddress : 'http://www.gander.tech/tx/',
             
