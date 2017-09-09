@@ -37,7 +37,7 @@ module.exports = function (environment) {
             ShareDifficulty: '4G',
             
             //Current and Localization
-            Currency: 'USD',
+            Currency: 'INR',
             CoinName: 'Expanse',
             CoinShortName: 'EXP',
             PaymentText: 'twice in a day',
