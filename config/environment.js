@@ -25,22 +25,22 @@ module.exports = function (environment) {
             StratumHost: 'exp-us01.daggerpool.com',
             StratumPort: 9009,
 
-            StratumHost1: 'exp-us02.daggerpool.com',
+            StratumHost1: 'exp-uk01.daggerpool.com',
             StratumPort1: 9009,
             
-            StratumHost2: 'exp-uk01.daggerpool.com',
-            StratumPort2: 9009,
+            NicehashHost: 'exp-us01.daggerpool.com',
+            NicehashPost: 9099,
 
             // Fee and payout details
-            PoolFee: '0%',
+            PoolFee: '0.25%',
             PayoutThreshold: '0.5',
-            ShareDifficulty: '4G',
+            ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Expanse',
             CoinShortName: 'EXP',
-            PaymentText: 'twice in a day',
+            PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'exp.daggerpool.com',

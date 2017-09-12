@@ -28,22 +28,23 @@ module.exports = function (environment) {
             StratumHost1: 'exp02.miningpoolindia.com',
             StratumPort1: 9009,
             
-            StratumHost2: 'exp01.miningpoolindia.com',
-            StratumPort2: 9009,
+            
+            NicehashHost: 'exp01.miningpoolindia.com',
+            NicehashPost: 9099,
 
             // Fee and payout details
-            PoolFee: '0%',
+            PoolFee: '0.25%',
             PayoutThreshold: '0.5',
-            ShareDifficulty: '4G',
+            ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Expanse',
             CoinShortName: 'EXP',
-            PaymentText: 'twice in a day',
+            PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'exp.daggerpool.com',
+            WebsiteName: 'exp.miningpoolindia.com',
             
             //Coin Bases Settings
             ChainAddress : 'http://www.gander.tech/address/',
@@ -53,7 +54,7 @@ module.exports = function (environment) {
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
-            TwitterHash: 'daggerpool_com',
+            TwitterHash: 'miningpoolindia',
             
 
             // For network hashrate (change for your favourite fork)
@@ -67,7 +68,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'http://exp.miningpoolindia.com/'
+        ENV.APP.ApiUrl = 'https://exp.miningpoolindia.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;

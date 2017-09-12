@@ -159,7 +159,7 @@
                     </a>
                      <a class="list-group-item">
                         <i class="fa fa-sitemap fa-fw"></i> Share Difficulty
-                        <span class="pull-right text-muted small"><span class="label label-success"><em>4G</em></span>
+                        <span class="pull-right text-muted small"><span class="label label-success"><em>{{format-hashrate config.ShareDifficulty}}</em></span>
                         </span>
                     </a>
                     <a class="list-group-item">
@@ -288,20 +288,15 @@
                                          <li class="list-group-item">
                                         <i class="fa fa-sitemap fa-fw"></i> Share Difficulty : {{config.ShareDifficulty}}, Efficient for miners
                                       </li>
+                                      
                                       <li class="list-group-item">
-                                        <i class="fa fa-money fa-fw"></i> {{config.PoolFee}} Pool fees as introductory offer
-                                      </li>
-                                      <li class="list-group-item">
-                                        <i class="fa fa-download fa-fw"></i> Payout are processed {{config.PaymentText}}, it would be gradually increased with number of users 
+                                        <i class="fa fa-download fa-fw"></i> Payout are processed {{config.PaymentText}}
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-sun-o fa-fw"></i>Customizable minimum payment threshold, To customize, please send us email of your {{config.CoinShortName}}Address, IP Address, Email and Payout threshold to {{config.SupportMail}}
-                                      </li>
+                                      </li>                                     
                                       <li class="list-group-item">
-                                        <i class="fa fa-shield fa-fw"></i>DDOS protected servers
-                                      </li>
-                                      <li class="list-group-item">
-                                        <i class="fa fa-server fa-fw"></i>24/7 availability via failover servers
+                                        <i class="fa fa-server fa-fw"></i>Nicehash tcp+stratum support, you can rent hash power on this pool <a target="_blank" href="https://www.nicehash.com/">  Nicehash portal  </a>
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-sitemap fa-fw"></i> Full stratum support (supports all type of miners)
@@ -332,7 +327,7 @@
                                   <div class="" id="callout-labels-inline-block">
                                     <ul class="list-group">
                                       <li class="list-group-item">
-                                        <i class="fa fa-mobile fa-fw"></i> Email notification system and SMS Notification for Indian Users
+                                        <i class="fa fa-mobile fa-fw"></i> Email notification system and SMS Notification
                                       </li>
                                       <li class="list-group-item">
                                         <i class="fa fa-android fa-fw"></i> Third party Android Monitoring App, iOS Monitoring App, and Telegram Bot
@@ -393,7 +388,7 @@
                                                   setx GPU_USE_SYNC_OBJECTS 1<br/>
                                                   setx GPU_MAX_ALLOC_PERCENT 100<br/>
                                                   setx GPU_SINGLE_ALLOC_PERCENT 100<br/>
-                                                  <h4>EthDcrMiner64.exe -epool {{config.StratumHost}}:{{config.StratumPort}} -ewal <kbd>{{config.CoinName}}Address</kbd> -eworker <kbd>WORKERNAME</kbd>-allcoins 1 -allpools 0 </h4>
+                                                  <h4>EthDcrMiner64.exe -epool {{config.StratumHost}}:{{config.StratumPort}} -ewal <kbd>{{config.CoinName}}Address</kbd> -eworker <kbd>WORKERNAME</kbd>-allcoins 1 </h4>
                                                 </span>
                                               </li>
 
@@ -402,7 +397,7 @@
 
 
                                           <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
-                                            Put the following commands into a file <kbd>start.bat</kbd> to automatically switch to backup server
+                                            Put the following commands into a file <kbd>epools.txt</kbd> to automatically switch to backup server, The server may be added later depending upon the load
                                             <h4><i class="fa fa-database fa-fw"></i>Backup Servers</h4>
                                             <ul class="list-group">
                                               <li class="list-group-item">
@@ -468,7 +463,7 @@
                                                 <span style="font-family: 'Anonymous Pro';">
                                                   COIN = "{{config.CoinName}}" <br/>
                                                   HOST = "0.0.0.0"<br/>
-                                                  PORT = 8080<br/>
+                                                  PORT = {{config.StratumPort}}<br/>
                                                   WALLET = "<kbd>ADDRESS</kbd>"<br/>
                                                   ENABLE_WORKER_ID = False<br/>
                                                   MONITORING = False<br/>
