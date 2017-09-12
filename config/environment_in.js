@@ -34,7 +34,7 @@ module.exports = function (environment) {
 
             // Fee and payout details
             PoolFee: '0.25%',
-            PayoutThreshold: '0.5',
+            PayoutThreshold: '1',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
