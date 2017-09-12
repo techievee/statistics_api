@@ -25,22 +25,22 @@ module.exports = function (environment) {
             StratumHost: 'ubiq-us01.daggerpool.com',
             StratumPort: 8008,
 
-            StratumHost1: 'ubiq-us02.daggerpool.com',
+            StratumHost1: 'ubiq-uk01.daggerpool.com',
             StratumPort1: 8008,
             
-            StratumHost2: 'ubiq-uk01.daggerpool.com',
-            StratumPort2: 8008,
+            NicehashHost: 'ubiq-us01.daggerpool.com',
+            NicehashPost: 8088,
 
             // Fee and payout details
-            PoolFee: '0%',
+            PoolFee: '0.25%',
             PayoutThreshold: '0.5',
-            ShareDifficulty: '4G',
+            ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Ubiq',
             CoinShortName: 'UBIQ',
-            PaymentText: 'twice in a day',
+            PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'ubiq.daggerpool.com',
@@ -67,7 +67,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'http://ubiq.daggerpool.com/'
+        ENV.APP.ApiUrl = 'https://ubiq.daggerpool.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;

@@ -25,22 +25,23 @@ module.exports = function (environment) {
             StratumHost: 'ubiq01.miningpoolindia.com',
             StratumPort: 8008,
 
-            StratumHost1: 'ubiq01.miningpoolindia.com',
+            StratumHost1: 'ubiq02.miningpoolindia.com',
             StratumPort1: 8008,
             
-            StratumHost2: 'ubiq02.miningpoolindia.com',
-            StratumPort2: 8008,
+
+            NicehashHost: 'ubiq01.miningpoolindia.com',
+            NicehashPost: 8088,
 
             // Fee and payout details
-            PoolFee: '0%',
+            PoolFee: '0.25%',
             PayoutThreshold: '0.5',
-            ShareDifficulty: '4G',
+            ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Ubiq',
             CoinShortName: 'UBIQ',
-            PaymentText: 'twice in a day',
+            PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'ubiq.daggerpool.com',
