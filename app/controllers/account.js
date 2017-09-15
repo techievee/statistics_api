@@ -15,9 +15,31 @@ export default Ember.Controller.extend({
       return percent;
     }
   }),
-  paymentPercent: Ember.computed('stats',{
+  
+  roundPercent: Ember.computed('stats', 'model', {
+    get() {
+      var percent = this.get('model.roundShares') / this.get('stats.nShares');
+      if (!percent) {
+        return 0;
+      }
+      return percent;
+    }
+  }),
+  
+  
+  payoutthreshold: Ember.computed('model', {
+    get() {
+        var defaultThreshold = config.APP.PayoutThreshold;
+        var threshold = this.getWithDefault('model.stats.payoutthreshold',defaultThreshold);
+        return threshold;
+    }
+  }),
+  
+  
+  paymentPercent: Ember.computed('model',{
     get() {
       var defaultThreshold = config.APP.PayoutThreshold;
+      defaultThreshold =defaultThreshold * 1000000000;
       var threshold = this.getWithDefault('model.stats.payoutthreshold',defaultThreshold);
       var balance = this.get('model.stats.balance');
             

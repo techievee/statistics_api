@@ -32,8 +32,8 @@ module.exports = function (environment) {
             NicehashPost: 8088,
 
             // Fee and payout details
-            PoolFee: '0.25%',
-            PayoutThreshold: '1',
+            PoolFee: '0%',
+            PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
             
             //Current and Localization

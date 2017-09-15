@@ -16,7 +16,22 @@
             <td>
               <a href="{{config.TransactionAddress}}{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
             </td>
-            <td>{{format-balance tx.amount}}<br/><em><small>≅ 
+            <td>
+                {{#twbs-popover popoverTrigger="hover" as |popover|}}
+                    {{#popover.trigger}}
+                      <span class="label label-success">{{format-balance tx.amount}}</span>
+                    {{/popover.trigger}}
+                    {{#popover.title}}
+                     TX Charges
+                    {{/popover.title}}
+                    {{#popover.content}}
+                      
+                            {{format-txcharges tx.txcost}}
+                      
+                    {{/popover.content}}
+                  {{/twbs-popover}}                
+                
+               <br/><em><small>≅ 
                         
                         {{#if (eq config.Currency 'USD') }}
                         {{ format-ethusd tx.amount model.exchangedata.price_usd }}

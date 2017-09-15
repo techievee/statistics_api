@@ -79,7 +79,7 @@ export default Ember.Controller.extend({
 
     roundVariance: Ember.computed('model', {
         get() {
-            var percent = (this.get('model.stats.roundShares') * this.get('config').ShareDifficulty) / this.get('difficulty');
+            var percent = (this.get('model.stats.currentRoundShares') * this.get('config').ShareDifficulty) / this.get('difficulty');
             if (!percent) {
                 return 0;
             }

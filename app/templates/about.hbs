@@ -82,11 +82,30 @@ Pool pays using the  Dynamic Pay-Per-Last-N-Shares ("PPLNS") payout scheme. This
                                
                              <li class="list-group-item">
                                
-                            The pool fee is waived off as a introductory offer, but the Transaction fees of the block are retained by the pool till the fee is fixed 
-
+                            The pool fee is waived off as a introductory offer
  
                              </li>
                              
+                            <li class="list-group-item">
+                               
+                            Transaction fees of the block are retained by the pool till the pool fee is fixed 
+ 
+                             </li>
+                             
+                             <li class="list-group-item">
+                               
+                            Gas charges for the transaction will be deducted during the Payout, the gas charges are calculated automatically during the payout time with the scope of standard 21000 gas limit
+ 
+                             </li>
+                             
+                              <li class="list-group-item">
+                               
+                            Mining into the contract account is not allowed, if found the miner will be banned and the extra transaction charges incured for the payout will be retained from the immature balance
+ 
+                             </li>
+                             
+                             
+                            
                           
                          </ul>
 
