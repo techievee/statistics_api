@@ -32,7 +32,7 @@ module.exports = function (environment) {
             NicehashPost: 9099,
 
             // Fee and payout details
-            PoolFee: '0.25%',
+            PoolFee: '0%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
             
@@ -40,7 +40,7 @@ module.exports = function (environment) {
             Currency: 'USD',
             CoinName: 'Expanse',
             CoinShortName: 'EXP',
-            PaymentText: 'Every 2 hours',
+            PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'exp.daggerpool.com',

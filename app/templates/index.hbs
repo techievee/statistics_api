@@ -256,7 +256,9 @@
                 <div class="panel-body">
 
                     <ul class="nav nav-tabs" id="myTab">
-                        <li class="active"><a data-target="#general" data-toggle="tab"><i class="fa fa-info fa-fw"></i> GENERAL INFORMATION</a></li>
+                        
+                        <li class="active"><a data-target="#general" data-toggle="tab"><i class="fa fa-info fa-fw"></i> INFORMATION</a></li>
+                        <li ><a data-target="#rent" data-toggle="tab"><i class="fa fa-credit-card-alt fa-fw"></i> RENTING</a></li>
                         <li><a data-target="#claymore" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CLAYMORE</a></li>
                         <li><a data-target="#stratumproxy" data-toggle="tab"><i class="fa fa-download fa-fw"></i>STRATUM PROXY</a></li>
                         <li><a data-target="#genoils" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CPP VERSION</a></li>
@@ -264,11 +266,52 @@
 
                     <div class="tab-content">
 
+                         <div class="tab-pane " id="rent">
+                            <div class="col-lg-12">
+                                <div class="panel">
+                                    <div class="panel-body">
+                                      <div class="panel panel-success"  >
+                                        <div class="panel-heading"> <i class="fa fa-credit-card-alt fa-fw"></i> MINING RENTAL RIG<a href="https://www.miningrigrentals.com?ref=41914" target="_blank"><i class="fa fa-link fa-fw"></i></a></div>
+                                        <div class="panel-body" style="padding-top:0px;padding-bottom:0px">
+
+                                          <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
+                                              <h2><i class="fa fa-bolt fa-fw"></i>Whether you're new to mining and want to try mining out before you buy mining rig</h2><br/>
+                                              <h4><i class="fa fa-ticket fa-fw"></i>Pool fully supports miningrigrentals</h4>
+                                          <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <a href="https://www.miningrigrentals.com/register?ref=41914" target="_blank" rel="nofollow">
+                                            <i class="fa fa-sign-in fa-fw"></i>
+                                            <strong>Register using this link to get new account</strong>
+                                            <small class="text-gray pull-right"> <i class="fa fa-user fa-fw"></i></small>
+                                          </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                               <i class="fa fa-plus fa-fw"></i>
+                                            <strong>Add the Pool using the following setting</strong>
+                                            </li>
+                                              <li class="list-group-item">
+                                                <span style="font-family: 'Anonymous Pro';">                                                 
+                                                  Address = stratum+tcp://{{config.StratumHost}}:{{config.StratumPort}}<br/>
+                                                  User = "<kbd>{{config.CoinName}} Address</kbd>"<br/>
+                                                  Pass = x<br/>                                                   
+                                                </span>
+                                        </li>
+
+                                          </ul>
+                                        </div>
+
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane active" id="general" style="height:600px; overflow-y: scroll;">
                           <div class="col-lg-12">
-                             
                             <div class="panel">
-                              <div class="panel-body">
+                              <div class="panel-body"  style="padding-top:0px;padding-bottom:0px">
  <h3 class="text-green"><i class="fa fa-ravelry fa-fw"></i>FEATURE</h3>
                                 <div class="panel-body bs-callout bs-callout-success">
                                   <div class="" id="callout-labels-inline-block" >
@@ -296,9 +339,6 @@
                                         <i class="fa fa-sun-o fa-fw"></i>Customizable minimum payment threshold, To customize, please send us email of your {{config.CoinShortName}}Address, IP Address, Email and Payout threshold to {{config.SupportMail}}
                                       </li>                                     
                                       <li class="list-group-item">
-                                        <i class="fa fa-server fa-fw"></i>Nicehash tcp+stratum support, you can rent hash power on this pool <a target="_blank" href="https://www.nicehash.com/">  Nicehash portal  </a>
-                                      </li>
-                                      <li class="list-group-item">
                                         <i class="fa fa-sitemap fa-fw"></i> Full stratum support (supports all type of miners)
                                       </li>
                                       <li class="list-group-item">
@@ -321,7 +361,7 @@
 
                           <div class="col-lg-12">
                             <div class="panel">
-                              <div class="panel-body">
+                              <div class="panel-body" style="padding-top:0px;padding-bottom:0px">
  <h3 class="text-orange"><i class="fa fa-calendar fa-fw"></i>FUTURE SCOPE</h3>
                                 <div class="panel-body bs-callout bs-callout-warning">
                                   <div class="" id="callout-labels-inline-block">

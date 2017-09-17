@@ -15,9 +15,21 @@ export default Ember.Controller.extend({
       return percent;
     }
   }),
-  paymentPercent: Ember.computed('stats',{
+  
+  
+  payoutthreshold: Ember.computed('model', {
     get() {
       var defaultThreshold = config.APP.PayoutThreshold;
+      var threshold = this.getWithDefault('model.stats.payoutthreshold',defaultThreshold);
+        return threshold;
+    }
+  }),
+  
+  
+  paymentPercent: Ember.computed('model',{
+    get() {
+      var defaultThreshold = config.APP.PayoutThreshold;
+      defaultThreshold =defaultThreshold * 1000000000;
       var threshold = this.getWithDefault('model.stats.payoutthreshold',defaultThreshold);
       var balance = this.get('model.stats.balance');
             
