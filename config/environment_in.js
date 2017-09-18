@@ -15,22 +15,22 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//exp.daggerpool.com/',
+            ApiUrl: '//dbix.miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://exp01.miningpoolindia.com',
-            HttpPort: 9999,            
+            HttpHost: 'http://dbix01.miningpoolindia.com',
+            HttpPort: 7777,            
 
             // Stratum mining endpoint
-            StratumHost: 'exp01.miningpoolindia.com',
-            StratumPort: 9009,
+            StratumHost: 'dbix01.miningpoolindia.com',
+            StratumPort: 7007,
 
-            StratumHost1: 'exp02.miningpoolindia.com',
-            StratumPort1: 9009,
+            StratumHost1: 'dbix02.miningpoolindia.com',
+            StratumPort1: 7007,
             
             
             NicehashHost: 'exp01.miningpoolindia.com',
-            NicehashPost: 9099,
+            NicehashPost: 7079,
 
             // Fee and payout details
             PoolFee: '0%',
@@ -39,18 +39,19 @@ module.exports = function (environment) {
             
             //Current and Localization
             Currency: 'INR',
-            CoinName: 'Expanse',
-            CoinShortName: 'EXP',
+            CoinName: 'Dubai Coin',
+            CoinShortName: 'DBIX',
             PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'exp.miningpoolindia.com',
+            WebsiteName: 'dbix.miningpoolindia.com',
             
-            //Coin Bases Settings
-            ChainAddress : 'http://www.gander.tech/address/',
-	    TransactionAddress : 'http://www.gander.tech/tx/',
-            UncleAddress : 'http://www.gander.tech/uncle/',
-            BlockAddress : 'http://www.gander.tech/tx/',
+              //Coin Bases Settings
+            ChainAddress : 'http://dbixscan.io/addr/',
+	    TransactionAddress : 'http://dbixscan.io/tx/',
+            UncleAddress : 'http://dbixscan.io/uncle/',
+            BlockAddress : 'http://dbixscan.io/block/',
+            
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',

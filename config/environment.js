@@ -15,21 +15,21 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//exp.daggerpool.com/',
+            ApiUrl: '//dbix.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://exp-us01.daggerpool.com',
-            HttpPort: 9999,            
+            HttpHost: 'http://dbix-us01.daggerpool.com',
+            HttpPort: 7777,            
 
             // Stratum mining endpoint
-            StratumHost: 'exp-us01.daggerpool.com',
-            StratumPort: 9009,
+            StratumHost: 'dbix-us01.daggerpool.com',
+            StratumPort: 7007,
 
-            StratumHost1: 'exp-uk01.daggerpool.com',
-            StratumPort1: 9009,
+            StratumHost1: 'dbix-uk01.daggerpool.com',
+            StratumPort1: 7007,
             
-            NicehashHost: 'exp-us01.daggerpool.com',
-            NicehashPost: 9099,
+            NicehashHost: 'dbix-us01.daggerpool.com',
+            NicehashPost: 7079,
 
             // Fee and payout details
             PoolFee: '0%',
@@ -38,18 +38,18 @@ module.exports = function (environment) {
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Expanse',
-            CoinShortName: 'EXP',
+            CoinName: 'Dubai Coin',
+            CoinShortName: 'DBIX',
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'exp.daggerpool.com',
+            WebsiteName: 'dbix.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'http://www.gander.tech/address/',
-	    TransactionAddress : 'http://www.gander.tech/tx/',
-            UncleAddress : 'http://www.gander.tech/uncle/',
-            BlockAddress : 'http://www.gander.tech/tx/',
+            ChainAddress : 'http://dbixscan.io/addr/',
+	    TransactionAddress : 'http://dbixscan.io/tx/',
+            UncleAddress : 'http://dbixscan.io/uncle/',
+            BlockAddress : 'http://dbixscan.io/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -67,7 +67,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://exp.daggerpool.com/'
+        ENV.APP.ApiUrl = 'https://dbix.daggerpool.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
