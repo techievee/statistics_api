@@ -1357,11 +1357,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea896b', end
 
 .bg-gradientblue {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ea896b+0,873315+58,70280c+82,bc5732+100 */
-background: rgb(234,137,107); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(234,137,107,1) 0%, rgba(135,51,21,1) 58%, rgba(112,40,12,1) 82%, rgba(188,87,50,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(234,137,107,1) 0%,rgba(135,51,21,1) 58%,rgba(112,40,12,1) 82%,rgba(188,87,50,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(234,137,107,1) 0%,rgba(135,51,21,1) 58%,rgba(112,40,12,1) 82%,rgba(188,87,50,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea896b', endColorstr='#bc5732',GradientType=1 ); /* IE6-9 */
+background: #70280C;
 }
 
 
