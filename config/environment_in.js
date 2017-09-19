@@ -15,42 +15,42 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//dbix.miningpoolindia.com/',
+            ApiUrl: '//music.miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://dbix01.miningpoolindia.com',
-            HttpPort: 7777,            
+            HttpHost: 'http://mc01.miningpoolindia.com',
+            HttpPort: 6666,            
 
             // Stratum mining endpoint
-            StratumHost: 'dbix01.miningpoolindia.com',
-            StratumPort: 7007,
+            StratumHost: 'mc01.miningpoolindia.com',
+            StratumPort: 6006,
 
-            StratumHost1: 'dbix02.miningpoolindia.com',
-            StratumPort1: 7007,
+            StratumHost1: 'mc02.miningpoolindia.com',
+            StratumPort1: 6006,
             
             
-            NicehashHost: 'exp01.miningpoolindia.com',
-            NicehashPost: 7079,
+            NicehashHost: 'mc01.miningpoolindia.com',
+            NicehashPost: 6069,
 
             // Fee and payout details
             PoolFee: '0%',
-            PayoutThreshold: '0.5',
+            PayoutThreshold: '10',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'INR',
-            CoinName: 'Dubai Coin',
-            CoinShortName: 'DBIX',
-            PaymentText: 'Every 2 hours',
+            CoinName: 'Music Coin',
+            CoinShortName: 'MUSIC',
+            PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'dbix.miningpoolindia.com',
+            WebsiteName: 'music.miningpoolindia.com',
             
               //Coin Bases Settings
-            ChainAddress : 'http://dbixscan.io/addr/',
-	    TransactionAddress : 'http://dbixscan.io/tx/',
-            UncleAddress : 'http://dbixscan.io/uncle/',
-            BlockAddress : 'http://dbixscan.io/block/',
+            ChainAddress : 'https://orbiter.musicoin.org/addr/',
+	    TransactionAddress : 'https://orbiter.musicoin.org/tx/',
+            UncleAddress : 'https://orbiter.musicoin.org/uncle/',
+            BlockAddress : 'https://orbiter.musicoin.org/block/',
             
             
             //Twitter Parameter
@@ -69,7 +69,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://dbix.miningpoolindia.com/'
+        ENV.APP.ApiUrl = 'https://music.miningpoolindia.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
