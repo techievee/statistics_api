@@ -49,7 +49,7 @@ module.exports = function (environment) {
             ChainAddress : 'http://www.gander.tech/address/',
 	    TransactionAddress : 'http://www.gander.tech/tx/',
             UncleAddress : 'http://www.gander.tech/uncle/',
-            BlockAddress : 'http://www.gander.tech/tx/',
+            BlockAddress : 'http://www.gander.tech/blocks/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
