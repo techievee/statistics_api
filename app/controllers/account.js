@@ -6,12 +6,17 @@ export default Ember.Controller.extend({
   stats: Ember.computed.reads('applicationController.model.stats'),
   config: Ember.computed.reads('applicationController.config'),
 
+  
   roundPercent: Ember.computed('stats', 'model', {
     get() {
       var percent = this.get('model.roundShares') / this.get('stats.nShares');
       if (!percent) {
         return 0;
       }
+      if(percent>100){
+          return 100;
+      }
+          
       return percent;
     }
   }),
