@@ -52,14 +52,13 @@ module.exports = function (environment) {
             UncleAddress : 'http://dbixscan.io/uncle/',
             BlockAddress : 'http://dbixscan.io/block/',
             
-            
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
             
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 14.4
+            BlockTime: 90
 
 
         }
