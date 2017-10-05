@@ -15,42 +15,42 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//dbix.miningpoolindia.com/',
+            ApiUrl: '//eth.miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://dbix01.miningpoolindia.com',
-            HttpPort: 7777,            
+            HttpHost: 'http://eth01.miningpoolindia.com',
+            HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'dbix01.miningpoolindia.com',
-            StratumPort: 7007,
+            StratumHost: 'eth01.miningpoolindia.com',
+            StratumPort: 8008,
 
-            StratumHost1: 'dbix02.miningpoolindia.com',
-            StratumPort1: 7007,
+            StratumHost1: 'eth02.miningpoolindia.com',
+            StratumPort1: 8008,
             
             
-            NicehashHost: 'exp01.miningpoolindia.com',
-            NicehashPost: 7079,
+            NicehashHost: 'eth01.miningpoolindia.com',
+            NicehashPost: 8089,
 
             // Fee and payout details
             PoolFee: '0%',
-            PayoutThreshold: '0.5',
+            PayoutThreshold: '0.1',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'INR',
-            CoinName: 'Dubai Coin',
-            CoinShortName: 'DBIX',
+            CoinName: 'Ethereum',
+            CoinShortName: 'ETH',
             PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'dbix.miningpoolindia.com',
+            WebsiteName: 'eth.miningpoolindia.com',
             
-              //Coin Bases Settings
-            ChainAddress : 'http://dbixscan.io/addr/',
-	    TransactionAddress : 'http://dbixscan.io/tx/',
-            UncleAddress : 'http://dbixscan.io/uncle/',
-            BlockAddress : 'http://dbixscan.io/block/',
+            //Coin Bases Settings
+            ChainAddress : 'https://etherscan.io/address/',
+	    TransactionAddress : 'https://etherscan.io/tx/',
+            UncleAddress : 'https://etherscan.io/uncle/',
+            BlockAddress : 'https://etherscan.io/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -58,7 +58,7 @@ module.exports = function (environment) {
             
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 90
+            BlockTime: 15
 
 
         }

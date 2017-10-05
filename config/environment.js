@@ -15,41 +15,41 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//dbix.daggerpool.com/',
+            ApiUrl: '//eth.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://dbix-us01.daggerpool.com',
-            HttpPort: 7777,            
+            HttpHost: 'http://eth-us01.daggerpool.com',
+            HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'dbix-us01.daggerpool.com',
-            StratumPort: 7007,
+            StratumHost: 'eth-us01.daggerpool.com',
+            StratumPort: 8008,
 
-            StratumHost1: 'dbix-uk01.daggerpool.com',
-            StratumPort1: 7007,
+            StratumHost1: 'eth-uk01.daggerpool.com',
+            StratumPort1: 8008,
             
-            NicehashHost: 'dbix-us01.daggerpool.com',
-            NicehashPost: 7079,
+            NicehashHost: 'eth-us01.daggerpool.com',
+            NicehashPost: 8089,
 
             // Fee and payout details
             PoolFee: '0%',
-            PayoutThreshold: '0.5',
+            PayoutThreshold: '0.1',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Dubai Coin',
-            CoinShortName: 'DBIX',
+            CoinName: 'Ethereum',
+            CoinShortName: 'ETH',
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'dbix.daggerpool.com',
+            WebsiteName: 'eth.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'http://dbixscan.io/addr/',
-	    TransactionAddress : 'http://dbixscan.io/tx/',
-            UncleAddress : 'http://dbixscan.io/uncle/',
-            BlockAddress : 'http://dbixscan.io/block/',
+            ChainAddress : 'https://etherscan.io/address/',
+	    TransactionAddress : 'https://etherscan.io/tx/',
+            UncleAddress : 'https://etherscan.io/uncle/',
+            BlockAddress : 'https://etherscan.io/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -57,7 +57,7 @@ module.exports = function (environment) {
             
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 90
+            BlockTime: 15
 
 
         }
