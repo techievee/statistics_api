@@ -32,7 +32,7 @@ module.exports = function (environment) {
             NicehashPost: 9099,
 
             // Fee and payout details
-            PoolFee: '0%',
+            PoolFee: '0.5%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
             
@@ -57,7 +57,7 @@ module.exports = function (environment) {
             
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 14.4
+            BlockTime: 30
 
 
         }
