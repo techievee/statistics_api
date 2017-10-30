@@ -15,42 +15,42 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//eth.miningpoolindia.com/',
+            ApiUrl: '//etc.miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://eth01.miningpoolindia.com',
-            HttpPort: 8888,            
+            HttpHost: 'http://etc01.miningpoolindia.com',
+            HttpPort: 9999,            
 
             // Stratum mining endpoint
-            StratumHost: 'eth01.miningpoolindia.com',
-            StratumPort: 8008,
+            StratumHost: 'etc01.miningpoolindia.com',
+            StratumPort: 9009,
 
-            StratumHost1: 'eth02.miningpoolindia.com',
-            StratumPort1: 8008,
+            StratumHost1: 'etc02.miningpoolindia.com',
+            StratumPort1: 9009,
             
             
-            NicehashHost: 'eth01.miningpoolindia.com',
-            NicehashPost: 8089,
+            NicehashHost: 'etc01.miningpoolindia.com',
+            NicehashPost: 9099,
 
             // Fee and payout details
-            PoolFee: '0.9%',
-            PayoutThreshold: '0.1',
+            PoolFee: '0.5%',
+            PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'INR',
-            CoinName: 'Ethereum',
-            CoinShortName: 'ETH',
+            CoinName: 'Ethereum Classic',
+            CoinShortName: 'ETC',
             PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'eth.miningpoolindia.com',
+            WebsiteName: 'etc.miningpoolindia.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://etherscan.io/address/',
-	    TransactionAddress : 'https://etherscan.io/tx/',
-            UncleAddress : 'https://etherscan.io/uncle/',
-            BlockAddress : 'https://etherscan.io/block/',
+            ChainAddress : 'https://gastracker.io/addr/',
+	    TransactionAddress : 'https://gastracker.io/tx/',
+            UncleAddress : 'https://gastracker.io/uncle/',
+            BlockAddress : 'https://gastracker.io/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',

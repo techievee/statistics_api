@@ -15,41 +15,41 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//eth.daggerpool.com/',
+            ApiUrl: '//etc.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://eth-us01.daggerpool.com',
-            HttpPort: 8888,            
+            HttpHost: 'http://etc-us01.daggerpool.com',
+            HttpPort: 9999,            
 
             // Stratum mining endpoint
-            StratumHost: 'eth-us01.daggerpool.com',
-            StratumPort: 8008,
+            StratumHost: 'etc-us01.daggerpool.com',
+            StratumPort: 9009,
 
-            StratumHost1: 'eth-uk01.daggerpool.com',
-            StratumPort1: 8008,
+            StratumHost1: 'etc-uk01.daggerpool.com',
+            StratumPort1: 9009,
             
-            NicehashHost: 'eth-us01.daggerpool.com',
-            NicehashPost: 8089,
+            NicehashHost: 'etc-us01.daggerpool.com',
+            NicehashPost: 9099,
 
             // Fee and payout details
-            PoolFee: '0.9%',
-            PayoutThreshold: '0.01',
+            PoolFee: '0.5%',
+            PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Ethereum',
-            CoinShortName: 'ETH',
+            CoinName: 'Ethereum Classic',
+            CoinShortName: 'ETC',
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'eth.daggerpool.com',
+            WebsiteName: 'etc.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://etherscan.io/address/',
-	    TransactionAddress : 'https://etherscan.io/tx/',
-            UncleAddress : 'https://etherscan.io/uncle/',
-            BlockAddress : 'https://etherscan.io/block/',
+            ChainAddress : 'https://gastracker.io/addr/',
+	    TransactionAddress : 'https://gastracker.io/tx/',
+            UncleAddress : 'https://gastracker.io/uncle/',
+            BlockAddress : 'https://gastracker.io/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
