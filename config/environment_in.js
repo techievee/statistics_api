@@ -15,22 +15,22 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//soil.miningpoolindia.com/',
+            ApiUrl: '//ele.miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://soil01.miningpoolindia.com',
-            HttpPort: 8888,            
+            HttpHost: 'http://ele01.miningpoolindia.com',
+            HttpPort: 7777,            
 
             // Stratum mining endpoint
-            StratumHost: 'soil01.miningpoolindia.com',
-            StratumPort: 8008,
+            StratumHost: 'ele01.miningpoolindia.com',
+            StratumPort: 7007,
 
-            StratumHost1: 'soil02.miningpoolindia.com',
-            StratumPort1: 8008,
+            StratumHost1: 'ele02.miningpoolindia.com',
+            StratumPort1: 7007,
             
             
-            NicehashHost: 'soil01.miningpoolindia.com',
-            NicehashPost: 8088,
+            NicehashHost: 'ele01.miningpoolindia.com',
+            NicehashPost: 7077,
 
             // Fee and payout details
             PoolFee: '0.5%',
@@ -39,18 +39,18 @@ module.exports = function (environment) {
             
             //Current and Localization
             Currency: 'INR',
-            CoinName: 'SOILcoin',
-            CoinShortName: 'SOIL',
+            CoinName: 'Elementrem',
+            CoinShortName: 'ELE',
             PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'soil.miningpoolindia.com',
+            WebsiteName: 'ele.miningpoolindia.com',
             
-            //Coin Bases Settings
-            ChainAddress : 'http://178.62.133.174:9001/#/address/',
-	    TransactionAddress : 'http://178.62.133.174:9001/#/tx/',
-            UncleAddress : 'http://178.62.133.174:9001/#/uncle/',
-            BlockAddress : 'http://178.62.133.174:9001/#/block/',
+            //Coin Bases Settings           
+            ChainAddress : 'http://www.elementrem.net/address/',
+	    TransactionAddress : 'http://www.elementrem.net/tx/',
+            UncleAddress : 'http://www.elementrem.net/uncle/',
+            BlockAddress : 'http://www.elementrem.net/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -68,7 +68,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://soil.miningpoolindia.com/'
+        ENV.APP.ApiUrl = 'https://ele.miningpoolindia.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;

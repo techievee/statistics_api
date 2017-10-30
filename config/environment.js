@@ -15,21 +15,21 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//soil.daggerpool.com/',
+            ApiUrl: '//ele.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://soil-us01.daggerpool.com',
-            HttpPort: 8888,            
+            HttpHost: 'http://ele-us01.daggerpool.com',
+            HttpPort: 7777,            
 
             // Stratum mining endpoint
-            StratumHost: 'soil-us01.daggerpool.com',
-            StratumPort: 8008,
+            StratumHost: 'ele-us01.daggerpool.com',
+            StratumPort: 7007,
 
-            StratumHost1: 'soil-uk01.daggerpool.com',
-            StratumPort1: 8008,
+            StratumHost1: 'ele-uk01.daggerpool.com',
+            StratumPort1: 7007,
             
-            NicehashHost: 'soil-us01.daggerpool.com',
-            NicehashPost: 8088,
+            NicehashHost: 'ele-us01.daggerpool.com',
+            NicehashPost: 7077,
 
             // Fee and payout details
             PoolFee: '0.5%',
@@ -38,18 +38,18 @@ module.exports = function (environment) {
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'SOILcoin',
-            CoinShortName: 'SOIL',
+            CoinName: 'Elementrem',
+            CoinShortName: 'ELE',
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'soil.daggerpool.com',
+            WebsiteName: 'ele.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'http://178.62.133.174:9001/#/address/',
-	    TransactionAddress : 'http://178.62.133.174:9001/#/tx/',
-            UncleAddress : 'http://178.62.133.174:9001/#/uncle/',
-            BlockAddress : 'http://178.62.133.174:9001/#/block/',
+            ChainAddress : 'http://www.elementrem.net/address/',
+	    TransactionAddress : 'http://www.elementrem.net/tx/',
+            UncleAddress : 'http://www.elementrem.net/uncle/',
+            BlockAddress : 'http://www.elementrem.net/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -67,7 +67,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://soil.daggerpool.com/'
+        ENV.APP.ApiUrl = 'https://ele.daggerpool.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
