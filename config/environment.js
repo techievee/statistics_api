@@ -15,21 +15,21 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//etc.daggerpool.com/',
+            ApiUrl: '//soil.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://etc-us01.daggerpool.com',
-            HttpPort: 9999,            
+            HttpHost: 'http://soil-us01.daggerpool.com',
+            HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'etc-us01.daggerpool.com',
-            StratumPort: 9009,
+            StratumHost: 'soil-us01.daggerpool.com',
+            StratumPort: 8008,
 
-            StratumHost1: 'etc-uk01.daggerpool.com',
-            StratumPort1: 9009,
+            StratumHost1: 'soil-uk01.daggerpool.com',
+            StratumPort1: 8008,
             
-            NicehashHost: 'etc-us01.daggerpool.com',
-            NicehashPost: 9099,
+            NicehashHost: 'soil-us01.daggerpool.com',
+            NicehashPost: 8088,
 
             // Fee and payout details
             PoolFee: '0.5%',
@@ -38,18 +38,18 @@ module.exports = function (environment) {
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Ethereum Classic',
-            CoinShortName: 'ETC',
+            CoinName: 'SOILcoin',
+            CoinShortName: 'SOIL',
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'etc.daggerpool.com',
+            WebsiteName: 'soil.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://gastracker.io/addr/',
-	    TransactionAddress : 'https://gastracker.io/tx/',
-            UncleAddress : 'https://gastracker.io/uncle/',
-            BlockAddress : 'https://gastracker.io/block/',
+            ChainAddress : 'http://178.62.133.174:9001/#/address/',
+	    TransactionAddress : 'http://178.62.133.174:9001/#/tx/',
+            UncleAddress : 'http://178.62.133.174:9001/#/uncle/',
+            BlockAddress : 'http://178.62.133.174:9001/#/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
