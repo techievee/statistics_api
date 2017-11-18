@@ -15,22 +15,22 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//etc.miningpoolindia.com/',
+            ApiUrl: '//pirl.miningpoolindia.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://etc01.miningpoolindia.com',
-            HttpPort: 9999,            
+            HttpHost: 'http://pirl01.miningpoolindia.com',
+            HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'etc01.miningpoolindia.com',
-            StratumPort: 9009,
+            StratumHost: 'pirl01.miningpoolindia.com',
+            StratumPort: 8008,
 
-            StratumHost1: 'etc02.miningpoolindia.com',
-            StratumPort1: 9009,
+            StratumHost1: 'pirl02.miningpoolindia.com',
+            StratumPort1: 8008,
             
             
-            NicehashHost: 'etc01.miningpoolindia.com',
-            NicehashPost: 9099,
+            NicehashHost: 'pirl01.miningpoolindia.com',
+            NicehashPost: 8088,
 
             // Fee and payout details
             PoolFee: '0.5%',
@@ -39,18 +39,18 @@ module.exports = function (environment) {
             
             //Current and Localization
             Currency: 'INR',
-            CoinName: 'Ethereum Classic',
-            CoinShortName: 'ETC',
+            CoinName: 'PIRL',
+            CoinShortName: 'PIRL',
             PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
-            WebsiteName: 'etc.miningpoolindia.com',
+            WebsiteName: 'pirl.miningpoolindia.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://gastracker.io/addr/',
-	    TransactionAddress : 'https://gastracker.io/tx/',
-            UncleAddress : 'https://gastracker.io/uncle/',
-            BlockAddress : 'https://gastracker.io/block/',
+            ChainAddress : 'https://explorer.pirl.io/#/address/',
+	    TransactionAddress : 'https://explorer.pirl.io/#/tx/',
+            UncleAddress : 'https://explorer.pirl.io/#/uncle/',
+            BlockAddress : 'https://explorer.pirl.io/#/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -58,7 +58,7 @@ module.exports = function (environment) {
             
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 15
+            BlockTime: 13
 
 
         }
@@ -68,7 +68,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://etc.miningpoolindia.com/'
+        ENV.APP.ApiUrl = 'https://pirl.miningpoolindia.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;

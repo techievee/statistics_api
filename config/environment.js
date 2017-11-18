@@ -15,41 +15,41 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//etc.daggerpool.com/',
+            ApiUrl: '//pirl.daggerpool.com/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://etc-us01.daggerpool.com',
-            HttpPort: 9999,            
+            HttpHost: 'http://pirl-us01.daggerpool.com',
+            HttpPort: 8888,            
 
             // Stratum mining endpoint
-            StratumHost: 'etc-us01.daggerpool.com',
-            StratumPort: 9009,
+            StratumHost: 'pirl-us01.daggerpool.com',
+            StratumPort: 8008,
 
-            StratumHost1: 'etc-uk01.daggerpool.com',
-            StratumPort1: 9009,
+            StratumHost1: 'pirl-uk01.daggerpool.com',
+            StratumPort1: 8008,
             
-            NicehashHost: 'etc-us01.daggerpool.com',
-            NicehashPost: 9099,
+            NicehashHost: 'pirl-us01.daggerpool.com',
+            NicehashPost: 8088,
 
             // Fee and payout details
             PoolFee: '0.5%',
-            PayoutThreshold: '0.5',
+            PayoutThreshold: '2',
             ShareDifficulty: '4000000000',
             
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Ethereum Classic',
-            CoinShortName: 'ETC',
+            CoinName: 'PIRL',
+            CoinShortName: 'PIRL',
             PaymentText: 'every 2 hours',
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'etc.daggerpool.com',
+            WebsiteName: 'pirl.daggerpool.com',
             
             //Coin Bases Settings
-            ChainAddress : 'https://gastracker.io/addr/',
-	    TransactionAddress : 'https://gastracker.io/tx/',
-            UncleAddress : 'https://gastracker.io/uncle/',
-            BlockAddress : 'https://gastracker.io/block/',
+            ChainAddress : 'https://explorer.pirl.io/#/address/',
+	    TransactionAddress : 'https://explorer.pirl.io/#/tx/',
+            UncleAddress : 'https://explorer.pirl.io/#/uncle/',
+            BlockAddress : 'https://explorer.pirl.io/#/block/',
             
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
@@ -57,7 +57,7 @@ module.exports = function (environment) {
             
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 15
+            BlockTime: 13
 
 
         }
