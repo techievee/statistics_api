@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://ele01.miningpoolindia.com',
-            HttpPort: 7777,            
+            HttpPort: 40009,
 
             // Stratum mining endpoint
             StratumHost: 'ele01.miningpoolindia.com',
-            StratumPort: 7007,
+            StratumPort: 40019,
 
             StratumHost1: 'ele02.miningpoolindia.com',
-            StratumPort1: 7007,
-            
-            
-            NicehashHost: 'ele01.miningpoolindia.com',
-            NicehashPost: 7077,
+            StratumPort1: 40019,
+
+
+            NicehashHost: 'ele-nh.miningpoolindia.com',
+            NicehashPost: 40029,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Elementrem',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'ele.miningpoolindia.com',
-            
-            //Coin Bases Settings           
+
+            //Coin Bases Settings
             ChainAddress : 'http://www.elementrem.net/address/',
 	    TransactionAddress : 'http://www.elementrem.net/tx/',
             UncleAddress : 'http://www.elementrem.net/uncle/',
             BlockAddress : 'http://www.elementrem.net/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15

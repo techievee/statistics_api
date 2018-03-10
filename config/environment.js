@@ -19,23 +19,23 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://ele-us01.daggerpool.com',
-            HttpPort: 7777,            
+            HttpPort: 40009,
 
             // Stratum mining endpoint
             StratumHost: 'ele-us01.daggerpool.com',
-            StratumPort: 7007,
+            StratumPort: 40019,
 
             StratumHost1: 'ele-uk01.daggerpool.com',
-            StratumPort1: 7007,
-            
-            NicehashHost: 'ele-us01.daggerpool.com',
-            NicehashPost: 7077,
+            StratumPort1: 40019,
+
+            NicehashHost: 'ele-nh.daggerpool.com',
+            NicehashPost: 40029,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Elementrem',
@@ -44,17 +44,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'ele.daggerpool.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'http://www.elementrem.net/address/',
 	    TransactionAddress : 'http://www.elementrem.net/tx/',
             UncleAddress : 'http://www.elementrem.net/uncle/',
             BlockAddress : 'http://www.elementrem.net/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'daggerpool_com',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15
