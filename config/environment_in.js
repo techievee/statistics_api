@@ -43,7 +43,7 @@ module.exports = function (environment) {
             CoinShortName: 'ETC',
             PaymentText: 'Every 2 hours',
             SupportMail: 'helpdesk@miningpoolindia.com',
-            SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
+            SupportHelpdesk: 'https://helpdesk.miningpoolindia.com',
             WebsiteName: 'etc.miningpoolindia.com',
 
             //Coin Bases Settings
