@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://dbix01.miningpoolindia.com',
-            HttpPort: 7777,            
+            HttpPort: 40007,
 
             // Stratum mining endpoint
             StratumHost: 'dbix01.miningpoolindia.com',
-            StratumPort: 7007,
+            StratumPort: 40017,
 
             StratumHost1: 'dbix02.miningpoolindia.com',
-            StratumPort1: 7007,
-            
-            
-            NicehashHost: 'exp01.miningpoolindia.com',
-            NicehashPost: 7079,
+            StratumPort1: 40017,
+
+
+            NicehashHost: 'exp-nh.miningpoolindia.com',
+            NicehashPost: 40027,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Dubai Coin',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'dbix.miningpoolindia.com',
-            
+
               //Coin Bases Settings
             ChainAddress : 'http://dbixscan.io/addr/',
 	    TransactionAddress : 'http://dbixscan.io/tx/',
             UncleAddress : 'http://dbixscan.io/uncle/',
             BlockAddress : 'http://dbixscan.io/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 90

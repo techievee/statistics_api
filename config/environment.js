@@ -19,23 +19,23 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://dbix-us01.daggerpool.com',
-            HttpPort: 7777,            
+            HttpPort: 40007,
 
             // Stratum mining endpoint
             StratumHost: 'dbix-us01.daggerpool.com',
-            StratumPort: 7007,
+            StratumPort: 40017,
 
             StratumHost1: 'dbix-uk01.daggerpool.com',
-            StratumPort1: 7007,
-            
-            NicehashHost: 'dbix-us01.daggerpool.com',
-            NicehashPost: 7079,
+            StratumPort1: 40017,
+
+            NicehashHost: 'dbix-nh.daggerpool.com',
+            NicehashPost: 40027,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Dubai Coin',
@@ -44,17 +44,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'dbix.daggerpool.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'http://dbixscan.io/addr/',
 	    TransactionAddress : 'http://dbixscan.io/tx/',
             UncleAddress : 'http://dbixscan.io/uncle/',
             BlockAddress : 'http://dbixscan.io/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'daggerpool_com',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 90
