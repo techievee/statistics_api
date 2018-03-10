@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://soil01.miningpoolindia.com',
-            HttpPort: 8888,            
+            HttpPort: 40008,
 
             // Stratum mining endpoint
             StratumHost: 'soil01.miningpoolindia.com',
-            StratumPort: 8008,
+            StratumPort: 40018,
 
             StratumHost1: 'soil02.miningpoolindia.com',
-            StratumPort1: 8008,
-            
-            
-            NicehashHost: 'soil01.miningpoolindia.com',
-            NicehashPost: 8088,
+            StratumPort1: 40018,
+
+
+            NicehashHost: 'soil-nh.miningpoolindia.com',
+            NicehashPost: 40028,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'SOILcoin',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'soil.miningpoolindia.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'http://178.62.133.174:9001/#/address/',
 	    TransactionAddress : 'http://178.62.133.174:9001/#/tx/',
             UncleAddress : 'http://178.62.133.174:9001/#/uncle/',
             BlockAddress : 'http://178.62.133.174:9001/#/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15
