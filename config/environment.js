@@ -28,7 +28,7 @@ module.exports = function (environment) {
             StratumHost1: 'eth-uk01.daggerpool.com',
             StratumPort1: 40011,
 
-            NicehashHost: 'eth-us01.daggerpool.com',
+            NicehashHost: 'eth-nh.daggerpool.com',
             NicehashPost: 40021,
 
             // Fee and payout details

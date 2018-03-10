@@ -29,7 +29,7 @@ module.exports = function (environment) {
             StratumPort1: 40011,
 
 
-            NicehashHost: 'eth01.miningpoolindia.com',
+            NicehashHost: 'eth-nh.miningpoolindia.com',
             NicehashPost: 40024,
 
             // Fee and payout details
