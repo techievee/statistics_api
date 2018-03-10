@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://ubiq01.miningpoolindia.com',
-            HttpPort: 8888,            
+            HttpPort: 40005,
 
             // Stratum mining endpoint
             StratumHost: 'ubiq01.miningpoolindia.com',
-            StratumPort: 8008,
+            StratumPort: 40015,
 
             StratumHost1: 'ubiq02.miningpoolindia.com',
-            StratumPort1: 8008,
-            
+            StratumPort1: 40015,
 
-            NicehashHost: 'ubiq01.miningpoolindia.com',
-            NicehashPost: 8088,
+
+            NicehashHost: 'ubiq-nh.miningpoolindia.com',
+            NicehashPost: 40025,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Ubiq',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'ubiq.daggerpool.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'https://ubiqscan.io/en/address/',
 	    TransactionAddress : 'https://ubiqscan.io/en/tx/',
             UncleAddress : 'https://ubiqscan.io/en/uncle/',
             BlockAddress : 'https://ubiqscan.io/en/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 14.4
