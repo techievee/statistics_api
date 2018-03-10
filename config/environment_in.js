@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://mc01.miningpoolindia.com',
-            HttpPort: 6666,            
+            HttpPort: 40003,
 
             // Stratum mining endpoint
             StratumHost: 'mc01.miningpoolindia.com',
-            StratumPort: 6006,
+            StratumPort: 40013,
 
             StratumHost1: 'mc02.miningpoolindia.com',
-            StratumPort1: 6006,
-            
-            
-            NicehashHost: 'mc01.miningpoolindia.com',
-            NicehashPost: 6069,
+            StratumPort1: 40013,
+
+
+            NicehashHost: 'mc-nh.miningpoolindia.com',
+            NicehashPost: 40023,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '10',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Music Coin',
@@ -45,18 +45,18 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'music.miningpoolindia.com',
-            
+
               //Coin Bases Settings
             ChainAddress : 'https://orbiter.musicoin.org/addr/',
 	    TransactionAddress : 'https://orbiter.musicoin.org/tx/',
             UncleAddress : 'https://orbiter.musicoin.org/uncle/',
             BlockAddress : 'https://orbiter.musicoin.org/block/',
-            
-            
+
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 14.4
