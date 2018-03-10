@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://exp01.miningpoolindia.com',
-            HttpPort: 9999,            
+            HttpPort: 40004,
 
             // Stratum mining endpoint
             StratumHost: 'exp01.miningpoolindia.com',
-            StratumPort: 9009,
+            StratumPort: 40014,
 
             StratumHost1: 'exp02.miningpoolindia.com',
-            StratumPort1: 9009,
-            
-            
-            NicehashHost: 'exp01.miningpoolindia.com',
-            NicehashPost: 9099,
+            StratumPort1: 40014,
+
+
+            NicehashHost: 'exp-nh.miningpoolindia.com',
+            NicehashPost: 40024,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Expanse',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'exp.miningpoolindia.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'http://www.gander.tech/address/',
 	    TransactionAddress : 'http://www.gander.tech/tx/',
             UncleAddress : 'http://www.gander.tech/uncle/',
             BlockAddress : 'http://www.gander.tech/blocks/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 30

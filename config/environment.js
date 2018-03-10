@@ -19,23 +19,23 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://exp-us01.daggerpool.com',
-            HttpPort: 9999,            
+            HttpPort: 40004,
 
             // Stratum mining endpoint
             StratumHost: 'exp-us01.daggerpool.com',
-            StratumPort: 9009,
+            StratumPort: 40014,
 
             StratumHost1: 'exp-uk01.daggerpool.com',
-            StratumPort1: 9009,
-            
-            NicehashHost: 'exp-us01.daggerpool.com',
-            NicehashPost: 9099,
+            StratumPort1: 40014,
+
+            NicehashHost: 'exp-nh.daggerpool.com',
+            NicehashPost: 40024,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Expanse',
@@ -44,17 +44,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'exp.daggerpool.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'http://www.gander.tech/address/',
 	    TransactionAddress : 'http://www.gander.tech/tx/',
             UncleAddress : 'http://www.gander.tech/uncle/',
             BlockAddress : 'http://www.gander.tech/blocks/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'daggerpool_com',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 30
