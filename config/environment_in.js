@@ -19,24 +19,24 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://eth01.miningpoolindia.com',
-            HttpPort: 8888,            
+            HttpPort: 40001,
 
             // Stratum mining endpoint
             StratumHost: 'eth01.miningpoolindia.com',
-            StratumPort: 8008,
+            StratumPort: 40011,
 
             StratumHost1: 'eth02.miningpoolindia.com',
-            StratumPort1: 8008,
-            
-            
+            StratumPort1: 40011,
+
+
             NicehashHost: 'eth01.miningpoolindia.com',
-            NicehashPost: 8089,
+            NicehashPost: 40024,
 
             // Fee and payout details
-            PoolFee: '0.9%',
+            PoolFee: '0.99%%',
             PayoutThreshold: '0.1',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Ethereum',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'eth.miningpoolindia.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'https://etherscan.io/address/',
 	    TransactionAddress : 'https://etherscan.io/tx/',
             UncleAddress : 'https://etherscan.io/uncle/',
             BlockAddress : 'https://etherscan.io/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15

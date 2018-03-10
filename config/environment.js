@@ -19,23 +19,23 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://eth-us01.daggerpool.com',
-            HttpPort: 8888,            
+            HttpPort: 40001,
 
             // Stratum mining endpoint
             StratumHost: 'eth-us01.daggerpool.com',
-            StratumPort: 8008,
+            StratumPort: 40011,
 
             StratumHost1: 'eth-uk01.daggerpool.com',
-            StratumPort1: 8008,
-            
+            StratumPort1: 40011,
+
             NicehashHost: 'eth-us01.daggerpool.com',
-            NicehashPost: 8089,
+            NicehashPost: 40021,
 
             // Fee and payout details
-            PoolFee: '0.9%',
+            PoolFee: '0.99%',
             PayoutThreshold: '0.01',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Ethereum',
@@ -44,17 +44,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'eth.daggerpool.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'https://etherscan.io/address/',
 	    TransactionAddress : 'https://etherscan.io/tx/',
             UncleAddress : 'https://etherscan.io/uncle/',
             BlockAddress : 'https://etherscan.io/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'daggerpool_com',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15
