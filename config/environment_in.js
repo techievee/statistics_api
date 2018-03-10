@@ -19,7 +19,7 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://etc01.miningpoolindia.com',
-            HttpPort: 9999,            
+            HttpPort: 40002,
 
             // Stratum mining endpoint
             StratumHost: 'etc01.miningpoolindia.com',
@@ -27,16 +27,16 @@ module.exports = function (environment) {
 
             StratumHost1: 'etc02.miningpoolindia.com',
             StratumPort1: 9009,
-            
-            
+
+
             NicehashHost: 'etc01.miningpoolindia.com',
-            NicehashPost: 9099,
+            NicehashPost: 40024,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'INR',
             CoinName: 'Ethereum Classic',
@@ -45,17 +45,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@miningpoolindia.com',
             SupportHelpdesk: 'http://helpdesk.miningpoolindia.com',
             WebsiteName: 'etc.miningpoolindia.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'https://gastracker.io/addr/',
 	    TransactionAddress : 'https://gastracker.io/tx/',
             UncleAddress : 'https://gastracker.io/uncle/',
             BlockAddress : 'https://gastracker.io/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'miningpoolindia',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15

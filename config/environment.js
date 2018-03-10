@@ -19,7 +19,7 @@ module.exports = function (environment) {
 
             // HTTP mining endpoint
             HttpHost: 'http://etc-us01.daggerpool.com',
-            HttpPort: 9999,            
+            HttpPort: 40002,
 
             // Stratum mining endpoint
             StratumHost: 'etc-us01.daggerpool.com',
@@ -27,15 +27,15 @@ module.exports = function (environment) {
 
             StratumHost1: 'etc-uk01.daggerpool.com',
             StratumPort1: 9009,
-            
+
             NicehashHost: 'etc-us01.daggerpool.com',
-            NicehashPost: 9099,
+            NicehashPost: 40004,
 
             // Fee and payout details
-            PoolFee: '0.5%',
+            PoolFee: '0.9%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
-            
+
             //Current and Localization
             Currency: 'USD',
             CoinName: 'Ethereum Classic',
@@ -44,17 +44,17 @@ module.exports = function (environment) {
             SupportMail: 'helpdesk@daggerpool.com',
             SupportHelpdesk: 'http://helpdesk.daggerpool.com',
             WebsiteName: 'etc.daggerpool.com',
-            
+
             //Coin Bases Settings
             ChainAddress : 'https://gastracker.io/addr/',
 	    TransactionAddress : 'https://gastracker.io/tx/',
             UncleAddress : 'https://gastracker.io/uncle/',
             BlockAddress : 'https://gastracker.io/block/',
-            
+
             //Twitter Parameter
             TwitterURL: 'https://twitter.com/',
             TwitterHash: 'daggerpool_com',
-            
+
 
             // For network hashrate (change for your favourite fork)
             BlockTime: 15
